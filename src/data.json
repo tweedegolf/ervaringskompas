@@ -1,0 +1,133 @@
+{
+    "Korte episode zorg": {
+        "color": "#a6ce39",
+        "items": [
+            "Schat de urgentie van de hulpvraag in en bepaalt de soort verrichting die noodzakelijk is (telefonisch consult, consult of visite).",
+            "Verheldert de hulpvraag, neemt de anamnese af en voert onderzoek uit.",
+            "Voert aanvullende diagnostiek uit.",
+            "Stelt de behandeling en het beleid in, informeert en adviseert.",
+            "Registreert en codeert.",
+            "Sluit de episode af door de behandeling en het beleid te evalueren.",
+            "Neemt de anamnese af aan de telefoon bij een telefonisch consult. ",
+            "Geeft telefonisch voorlichting en advies.",
+            "Superviseert (telefonische) consulten van de assistente en geeft feedback."
+        ]
+    },
+    "Spoedeisende zorg": {
+        "color": "#60bb46",
+        "items": [
+            "Stelt het toestandsbeeld vast van een patiënt met acute ziektebeelden met behulp van de ABCDE methode en voert daarbij de noodzakelijke handelingen uit.",
+            "Handelt getrieerde consulten en visites naar urgentie af.",
+            "Legt bevindingen, diagnose en beleid vast en draagt deze helder over.",
+            "Superviseert gedelegeerde taken.",
+            "Rapporteert voorkomende incidenten en analyseert deze op verbeterpunten in de acute zorgverlening.",
+            "Bewaakt de vlotte afhandeling van de patiëntenstroom met als doel veilige, doelmatige en overbruggende zorg.",
+            "Organiseert het medisch beleid in samenwerking met andere (para) medische hulpverleners en mantelzorgers.",
+            "Handelt visites af conform de regelgeving ten aanzien van spoedritten.",
+            "Trieert telefonisch, stelt de urgentie vast, bepaalt het medisch beleid en geeft instructies in begrijpelijke taal.",
+            "Autoriseert binnen de tijdsnorm het handelen van de triage assistent.",
+            "Fungeert als eerste aanspreekpunt voor SEH, ambulance, apotheek, GGZ, thuiszorg en politie."
+        ]
+    },
+    "Chronische zorg": {
+        "color": "#00ae9d",
+        "items": [
+            "Behandelt, controleert en organiseert de zorg voor patiënten met diabetes, HVZ en astma/COPD.",
+            "Registreert, deelt data met medebehandelaars en stelt beleid bij.",
+            "Begeleidt en evalueert de zorg verleend door assistente en Praktijkondersteuner Huisarts.",
+            "Markeert het moment dat er sprake is van een chronische ziekte, die behandeling en controle behoeft.",
+            "Verleent en organiseert zorg na ontslag uit het ziekenhuis.",
+            "Behandelt en begeleidt patiënten met zeldzame ziekten.",
+            "Kiest - bij conflicterende richtlijnen - samen met de patiënt de meest passende behandeling.",
+            "Maakt gebruik van moderne communicatietechnieken (ICT)."
+        ]
+    },
+    "Zorg voor ouderen met complexe problematiek": {
+        "color": "#00a6e4",
+        "items": [
+            "Stelt vast of er sprake is van complexe problematiek.",
+            "Stelt in samenspraak met de patiënt een behandelplan vast.",
+            "Behandelt intercurrente ziekten in samenhang met bestaande (complexe) problematiek.",
+            "Bespreekt vroegtijdig de keuzes in aanvullende diagnostiek en/of behandeling rekening houdend met persoonlijke wensen en levensverwachting.",
+            "Stemt taken bij de zorg voor ouderen af met andere bij de patiënt betrokken hulpverleners.",
+            "Bepaalt periodiek de zorgbehoefte van de ouderen in de praktijk (door screening en/of casefinding) en past het zorgaanbod daar waar mogelijk op aan.",
+            "Verbetert en bewaakt de veiligheid van de ouderenzorg in de praktijk, door onder meer periodieke medicatiereviews en valpreventieprogramma’s.",
+            "Bepaalt welk aandeel de huisartsvoorziening heeft in de zorg voor ouderen en stemt dit af met andere verantwoordelijken in deze zorg zoals de Gemeente (WMO)."
+        ]
+    },
+    "Zorg voor het kind": {
+        "color": "#b41e8d",
+        "items": [
+            "Voert een consult met een acuut ziek kind (leeftijd: 0-2 jaar).",
+            "Voert een consult met een kind met lichamelijke klachten (leeftijd: 3-10 jaar).",
+            "Voert een consult met een puber/adolescent (leeftijd: 11-23 jaar).",
+            "Maakt overgewicht bespreekbaar en begeleidt hierbij.",
+            "Signaleert problematische thuissituaties en begeleidt het gezin.",
+            "Schrijft medicatie voor aan kinderen."
+        ]
+    },
+    "Zorg voor patiënten met psychische klachten en aandoeningen": {
+        "color": "#ed1a3a",
+        "items": [
+            "Begeleidt een patiënt met spanningsklachten, overspanning of burn-out.",
+            "Zet bij een patiënt met angst- en stemmingsklachten /stoornissen de benodigde behandeling in.",
+            "Diagnosticeert acute psychiatrische stoornissen en zet de benodigde behandeling in.",
+            "Schat bij suïcidaliteit het gevaar in voor de patiënt en diens omgeving en zet de benodigde hulp in.",
+            "Motiveert een patiënt met (een verhoogd risico voor) verslavingsgedrag voor passende zorg.",
+            "Zet bij een patiënt met gevolgen van traumatische gebeurtenissen de benodigde zorg in.",
+            "Signaleert persoonlijkheidstrekken en -stoornissen, definieert de gevolgen hiervan voor de zorgverlening en adviseert de patiënt om indien nodig passende begeleiding te vinden.",
+            "Zet bij kinderen met afwijkend gedrag passende diagnostiek en behandeling in."
+        ]
+    },
+    "Zorg voor patienten met SOLK": {
+        "color": "#f36421",
+        "items": [
+            "Stelt de werkhypothese SOLK, geeft uitleg en behandelt stapsgewijs.",
+            "Maakt gebruik van klachtenregistratie om patronen in klachten en beïnvloedende factoren te ontdekken.",
+            "Voert een verwijsgesprek met een patiënt met SOLK.",
+            "Bespreekt de gevolgen van de klachten voor de arbeidsparticipatie bij (dreigende) langdurige arbeidsongeschiktheid.",
+            "Biedt langdurige begeleiding en houdt de regie bij een patiënt met ernstige SOLK."
+        ]
+    },
+    "Palliatieve en terminale zorg": {
+        "color": "#f36421",
+        "items": [
+            "Voert een gesprek over het naderend levenseinde.",
+            "Past beleid aan op basis van de fase waarin de patiënt in de palliatieve fase verkeert: in het bijzonder de overgang van curatieve fase naar de palliatieve fase en de stervensfase.",
+            "Behandelt de specifieke problemen in de palliatieve / terminale fase.",
+            "Anticipeert op de vaak complexe problemen en klachten tijdens de palliatieve fase / terminale zorg.",
+            "Organiseert de palliatieve en terminale zorg, stuurt andere zorgverleners aan en is aanspreekpunt voor de patiënt en zijn omgeving.",
+            "Verleent zorg aan naasten.",
+            "Begeleidt een patiënt en diens naasten bij het verlies (rouwverwerking).",
+            "Voert palliatieve sedatie uit.",
+            "Voert de wens tot euthanasie uit of draagt deze over in geval van persoonlijke gewetensbezwaren.",
+            "Levert persoonlijke continuïteit van zorgverlening."
+        ]
+    },
+    "Preventie": {
+        "color": "#fed702",
+        "items": [
+            "Stelt, samen met een patiënt, een individueel zorgplan op ter preventie van een chronische ziekte.",
+            "Verkent op indicatie de leefstijl van een patiënt en bespreekt mogelijkheden tot verandering.",
+            "Adviseert over verschillende preventieve activiteiten.",
+            "Selecteert personen en patiënten met een verhoogd gezondheidsrisico.",
+            "Voert programmatische preventie uit.",
+            "Bepaalt welke rol de huisarts heeft in een nieuw of bestaand preventieproject en voert deze uit.",
+            "Is betrokken bij de uitvoering van bevolkingsonderzoek zoals door de beroepsgroep met de overheid is overeengekomen en voert zijn aandeel hierin uit.",
+            "Brengt een erfelijke ziekte in de familie van een patiënt in kaart en bespreekt of screening of diagnostiek aan de orde is.",
+            "Bespreekt bij een bestaande kinderwens preventieve mogelijkheden voorafgaand aan een toekomstige zwangerschap."
+        ]
+    },
+    "Praktijkmanagement": {
+        "color": "#a5c3cb",
+        "items": [
+            "Formuleert een persoonlijke en een praktijkvisie op de huisartsenzorg.",
+            "Stelt een verbeterplan op en voert dit uit.",
+            "Superviseert individuele praktijkmedewerkers bij het uitvoeren van voorbehouden handelingen.",
+            "Levert een bijdrage aan de patiëntveiligheid door het melden, analyseren en afhandelen van patiëntveiligheidsproblemen.",
+            "Heeft inzicht in de financiering en bedrijfsvoering van de huisartsenpraktijk, declareert eigen verrichtingen en adviseert patiënten over de financiële consequenties van een medische behandeling/diagnostiek.",
+            "Vertegenwoordigt de opleidingspraktijk voor een specifiek thema in een multidisciplinair overleg.",
+            "Stemt de praktijkvoering en informatievoorziening af op de behoeften van de patiëntenpopulatie."
+        ]
+    }
+}
