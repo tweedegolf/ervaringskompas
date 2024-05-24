@@ -3,6 +3,7 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  min-width: 470px;
 }
 
 *, *:before, *:after {
@@ -33,6 +34,12 @@ body {
   padding: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+}
+
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -57,6 +64,10 @@ ol {
   background-color: #fafafa;
 }
 
+.legenda h2 {
+  margin-bottom: 0.5rem;
+}
+
 /* table styling */
 
 table {
@@ -71,13 +82,19 @@ tbody th {
   padding: 0.5rem;
 }
 
+th.theme {
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
 tbody td {
   width: 50px;
 }
 
 td, th {
-  border: 1px solid #eaeaea;
+  border: 1px solid #f0f0f0;
   vertical-align: middle;
+  min-width: 2rem;
 }
 
 tbody td label {
@@ -88,6 +105,10 @@ tbody td label {
   cursor: pointer;
 }
 
+table h3 {
+  margin-top: 1rem;
+}
+
 table h3 span {
   display: inline-block;
   width: 2rem;
@@ -96,6 +117,7 @@ table h3 span {
   text-align: center;
   border-radius: 1rem;
   margin-right: 1rem;
+  color: #fff;
 }
 
 tbody input {

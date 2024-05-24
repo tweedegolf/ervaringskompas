@@ -1,5 +1,6 @@
-import { Fragment } from 'react/jsx-runtime';
 import rawData from './data.json';
+import Table from './Table';
+import usePersistence, { PersistenceContext } from './usePersistence';
 
 const data = rawData as unknown as {
   [theme: string]: {
@@ -16,9 +17,11 @@ const levels = [
   'meermaals zelfstandig uitgevoerd',
 ];
 
-function App() {
+export default  function App(): JSX.Element {
+  const persistence = usePersistence();
+
   return (
-    <div>
+    <PersistenceContext.Provider value={persistence}>
       <h1>Ervaringskompas</h1>
       <p>
         Welke ervaring heb je opgedaan met deze beroepsactiviteit in de praktijk
@@ -32,66 +35,7 @@ function App() {
           ))}
         </ol>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th colSpan={2}></th>
-            {levels.map((level, levelIndex) => (
-              <th key={level}>{levelIndex + 1}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {Object.entries(data).map(([theme, { color, items }], themeIndex) => (
-            <Fragment key={theme}>
-              <tr key={theme}>
-                <td style={{ borderBottomColor: color }}></td>
-                <th style={{ borderBottomColor: color }} colSpan={6}>
-                  <h3 style={{ borderColor: color }}>
-                    <span style={{ background: color }}>{themeIndex + 1}</span>
-                    {theme}
-                  </h3>
-                </th>
-              </tr>
-              {items.map((item, index) => (
-                <tr key={item} className="selectable">
-                  <td style={{ borderBottomColor: color }}>
-                    <label htmlFor={`check-${index}`} title="markeren">
-                      <input
-                        type="checkbox"
-                        id={`check-${index}`}
-                        name={`check-${index}`}
-                      />
-                    </label>
-                  </td>
-                  <th scope="row" style={{ borderBottomColor: color }}>
-                    {item}
-                  </th>
-                  {levels
-                    .map((level, levelIndex) => ({
-                      level,
-                      key: `option-${index}-${levelIndex}`,
-                    }))
-                    .map(({ level, key }, levelIndex) => (
-                      <td key={level} style={{ borderBottomColor: color }}>
-                        <label htmlFor={key} title={level}>
-                          <input
-                            type="radio"
-                            name={`option-${index}`}
-                            id={key}
-                            value={levelIndex}
-                          />
-                        </label>
-                      </td>
-                    ))}
-                </tr>
-              ))}
-            </Fragment>
-          ))}
-        </tbody>
-      </table>
-    </div>
+      <Table levels={levels} themes={Object.entries(data)} />
+    </PersistenceContext.Provider>
   );
 }
-
-export default App;
