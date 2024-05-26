@@ -1,5 +1,6 @@
-interface ItemProps {
+interface ExperienceRowProps {
   name: string;
+  themeIndex: number,
   index: number;
   color: string;
   levels: string[];
@@ -7,15 +8,15 @@ interface ItemProps {
   onSelect: (level: number) => void;
 }
 
-export default function Item({ name, index, color, levels, selected, onSelect }: ItemProps): JSX.Element {
+export default function ExperienceRow({ name, themeIndex, index, color, levels, selected, onSelect }: ExperienceRowProps): JSX.Element {
   return (
     <tr className="selectable">
       <td style={{ borderBottomColor: color, borderLeftColor: color }}>
-        <label htmlFor={`check-${index}`} title="markeren">
+        <label htmlFor={`check-${themeIndex}-${index}`} title="markeren">
           <input
             type="checkbox"
-            id={`check-${index}`}
-            name={`check-${index}`}
+            id={`check-${themeIndex}-${index}`}
+            name={`check-${themeIndex}-${index}`}
           />
         </label>
       </td>
@@ -25,7 +26,7 @@ export default function Item({ name, index, color, levels, selected, onSelect }:
       {levels
         .map((level, levelIndex) => ({
           level,
-          key: `option-${index}-${levelIndex}`,
+          key: `option-${themeIndex}-${index}-${levelIndex}`,
         }))
         .map(({ level, key }, levelIndex) => (
           <td
@@ -37,11 +38,11 @@ export default function Item({ name, index, color, levels, selected, onSelect }:
             <label htmlFor={key} title={level}>
               <input
                 type="radio"
-                name={`option-${index}`}
+                name={`option-${themeIndex}-${index}`}
                 id={key}
-                value={levelIndex}
-                onChange={() => onSelect(levelIndex)}
-                checked={levelIndex === selected}
+                value={levelIndex + 1}
+                onChange={() => onSelect(levelIndex + 1)}
+                checked={levelIndex + 1 === selected}
               />
             </label>
           </td>

@@ -1,27 +1,11 @@
-import rawData from './data.json';
 import Table from './Table';
-import usePersistence, { PersistenceContext } from './usePersistence';
-
-const data = rawData as unknown as {
-  [theme: string]: {
-    color: string;
-    items: string[];
-  };
-};
-
-const levels = [
-  'nog geen ervaring',
-  'meegekeken',
-  'een beetje ervaring',
-  'zelfstandig uitgevoerd',
-  'meermaals zelfstandig uitgevoerd',
-];
+import usePersistence from './usePersistence';
 
 export default  function App(): JSX.Element {
-  const persistence = usePersistence();
+  const { state, select } = usePersistence();
 
   return (
-    <PersistenceContext.Provider value={persistence}>
+    <div>
       <h1>Ervaringskompas</h1>
       <p>
         Welke ervaring heb je opgedaan met deze beroepsactiviteit in de praktijk
@@ -30,12 +14,12 @@ export default  function App(): JSX.Element {
       <div className="legenda">
         <h2>Legenda</h2>
         <ol>
-          {levels.map((level) => (
+          {state.levels.map((level) => (
             <li key={level}>{level}</li>
           ))}
         </ol>
       </div>
-      <Table levels={levels} themes={Object.entries(data)} />
-    </PersistenceContext.Provider>
+      <Table state={state} select={select} />
+    </div>
   );
 }

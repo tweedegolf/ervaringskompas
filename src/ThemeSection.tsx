@@ -1,23 +1,20 @@
-import { Fragment, useContext } from 'react';
-import Item from './Item';
-import { PersistenceContext } from './usePersistence';
+import { Fragment } from 'react';
+import { Theme } from './usePersistence';
+import ExperienceRow from './ExperienceRow';
 
 interface ThemeProps {
-  theme: {
-    name: string;
-    color: string;
-    items: string[];
-    index: number;
-  };
-  levels: string[];
+  theme: Theme;
+  index: number,
+  levels: string[],
+  select: (theme: number, item: number, level: number) => void;
 }
 
-export default function Theme({
-  theme: { name, color, items, index: themeIndex },
+export default function ThemeSection({
+  theme: { name, color, experiences },
+  index: themeIndex,
   levels,
+  select,
 }: ThemeProps): JSX.Element {
-  const { getLevel, select } = useContext(PersistenceContext);
-
   return (
     <Fragment>
       <tr>
@@ -34,14 +31,15 @@ export default function Theme({
           </h3>
         </th>
       </tr>
-      {items.map((item, index) => (
-        <Item
-          key={item}
-          name={item}
+      {experiences.map((experience, index) => (
+        <ExperienceRow
+          key={experience.name}
+          name={experience.name}
+          themeIndex={themeIndex}
           index={index}
           levels={levels}
           color={color}
-          selected={getLevel(themeIndex, index)}
+          selected={experience.level}
           onSelect={(level: number) => select(themeIndex, index, level)}
         />
       ))}
