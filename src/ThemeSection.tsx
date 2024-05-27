@@ -1,12 +1,13 @@
 import { Fragment } from 'react';
-import { Theme } from './usePersistence';
+import { Mark, Select, Theme } from './usePersistence';
 import ExperienceRow from './ExperienceRow';
 
 interface ThemeProps {
   theme: Theme;
-  index: number,
-  levels: string[],
-  select: (theme: number, item: number, level: number) => void;
+  index: number;
+  levels: string[];
+  select: Select;
+  mark: Mark;
 }
 
 export default function ThemeSection({
@@ -14,6 +15,7 @@ export default function ThemeSection({
   index: themeIndex,
   levels,
   select,
+  mark,
 }: ThemeProps): JSX.Element {
   return (
     <Fragment>
@@ -40,6 +42,8 @@ export default function ThemeSection({
           levels={levels}
           color={color}
           selected={experience.level}
+          marked={experience.marked}
+          onMark={(marked: boolean) => mark(themeIndex, index, marked)}
           onSelect={(level: number) => select(themeIndex, index, level)}
         />
       ))}

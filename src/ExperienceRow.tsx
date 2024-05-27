@@ -1,14 +1,26 @@
 interface ExperienceRowProps {
   name: string;
-  themeIndex: number,
+  themeIndex: number;
   index: number;
   color: string;
   levels: string[];
   selected: number;
+  marked: boolean;
+  onMark: (marked: boolean) => void;
   onSelect: (level: number) => void;
 }
 
-export default function ExperienceRow({ name, themeIndex, index, color, levels, selected, onSelect }: ExperienceRowProps): JSX.Element {
+export default function ExperienceRow({
+  name,
+  themeIndex,
+  index,
+  color,
+  levels,
+  marked,
+  selected,
+  onMark,
+  onSelect,
+}: ExperienceRowProps): JSX.Element {
   return (
     <tr className="selectable">
       <td style={{ borderBottomColor: color, borderLeftColor: color }}>
@@ -17,6 +29,8 @@ export default function ExperienceRow({ name, themeIndex, index, color, levels, 
             type="checkbox"
             id={`check-${themeIndex}-${index}`}
             name={`check-${themeIndex}-${index}`}
+            checked={marked}
+            onChange={(e) => onMark(e.target.checked)}
           />
         </label>
       </td>
@@ -33,8 +47,10 @@ export default function ExperienceRow({ name, themeIndex, index, color, levels, 
             key={level}
             style={{
               borderBottomColor: color,
-              borderRightColor: levelIndex === levels.length - 1 ? color : undefined
-            }}>
+              borderRightColor:
+                levelIndex === levels.length - 1 ? color : undefined,
+            }}
+          >
             <label htmlFor={key} title={level}>
               <input
                 type="radio"
