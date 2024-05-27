@@ -208,7 +208,7 @@ table.form tr.selectable:hover {
   top: 0.5rem;
   content: '';
   display: block;
-  width: 100%;
+  width: calc(100% - 0.5rem);
   height: 1rem;
   background-color: #fafafa;
 }
@@ -225,12 +225,20 @@ table.form tr.selectable:hover {
   padding: 0.25rem
 }
 
+.result td {
+  vertical-align: top;
+}
+
 .result td:nth-child(2) {
   text-align: right;
   padding: 0.25rem 1rem;
 }
 
 @media screen and (max-width: 768px) {
+  .result table {
+    width: 100%;
+  }
+
   .result .progress {
     max-width: 40vw;
   }

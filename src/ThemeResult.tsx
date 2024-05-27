@@ -32,7 +32,7 @@ export default function ThemeResult({ state }: { state: State }): JSX.Element {
                 className="bar"
                 style={{
                   backgroundColor: color,
-                  width: `${percentage}%`,
+                  width: `calc(${percentage}% - 0.5rem)`,
                 }}
               ></div>
             </td>
@@ -45,7 +45,7 @@ export default function ThemeResult({ state }: { state: State }): JSX.Element {
             <div
               className="bar"
               style={{
-                width: `${totalPercentage}%`,
+                width: `calc(${totalPercentage}% - 0.5rem)`,
               }}
             ></div>
           </td>

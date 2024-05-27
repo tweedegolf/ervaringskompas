@@ -39,7 +39,7 @@ export default function CompetenceResult({
               <div
                 className="bar"
                 style={{
-                  width: `${percentage}%`,
+                  width: `calc(${percentage}% - 0.5rem)`,
                 }}
               ></div>
             </td>
