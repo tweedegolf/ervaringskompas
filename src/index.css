@@ -160,7 +160,11 @@ table.form tr.marked {
 }
 
 table.form thead th {
-  padding: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+table.form thead th svg {
+  vertical-align: middle;
 }
 
 table.form tbody td {
@@ -205,10 +209,12 @@ table.form tr.selectable:hover {
 }
 
 @media screen and (max-width: 768px) {
-  table.form th:last-child {
-    max-width: 2rem;
-    text-overflow: ellipsis;
-    overflow: hidden;
+  table.form thead th {
+    padding: 0.25rem;
+  }
+
+  table.form tbody td {
+    width: auto;
   }
 }
 
