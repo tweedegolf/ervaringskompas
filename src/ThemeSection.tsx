@@ -1,4 +1,3 @@
-import { Fragment } from 'react';
 import { Mark, Select, Theme } from './usePersistence';
 import ExperienceRow from './ExperienceRow';
 
@@ -16,9 +15,9 @@ export default function ThemeSection({
   levels,
   select,
   mark,
-}: ThemeProps): JSX.Element {
+}: ThemeProps) {
   return (
-    <Fragment>
+    <>
       <tr>
         <th
           style={{
@@ -47,6 +46,6 @@ export default function ThemeSection({
           onSelect={(level: number) => select(themeIndex, index, level)}
         />
       ))}
-    </Fragment>
+    </>
   );
 }

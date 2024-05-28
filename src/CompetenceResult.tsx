@@ -1,10 +1,6 @@
 import { MAX_LEVEL, State } from './usePersistence';
 
-export default function CompetenceResult({
-  state,
-}: {
-  state: State;
-}): JSX.Element {
+export default function CompetenceResult({ state }: { state: State }) {
   const results = state.competences.map((competence, index) => {
     const [score, max] = state.themes.reduce(
       (acc, theme) => {

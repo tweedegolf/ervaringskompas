@@ -20,7 +20,7 @@ export default function ExperienceRow({
   selected,
   onMark,
   onSelect,
-}: ExperienceRowProps): JSX.Element {
+}: ExperienceRowProps) {
   return (
     <tr className={`selectable ${marked ? 'marked' : ''}`}>
       <th
@@ -68,7 +68,7 @@ export default function ExperienceRow({
             id={`check-${themeIndex}-${index}`}
             name={`check-${themeIndex}-${index}`}
             checked={marked}
-            onChange={(e) => onMark(e.target.checked)}
+            onChange={(e) => onMark((e.target as HTMLInputElement).checked)}
           />
         </label>
       </td>

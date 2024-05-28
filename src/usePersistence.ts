@@ -1,4 +1,4 @@
-import { Reducer, useReducer } from 'react';
+import { useReducer } from 'preact/hooks';
 import rawData from './data.json';
 import { decode } from './util';
 
@@ -121,10 +121,7 @@ function initialState(): State {
 }
 
 export default function usePersistence(): PersistenceState {
-  const [state, dispatch] = useReducer<Reducer<State, Action>>(
-    reducer,
-    initialState()
-  );
+  const [state, dispatch] = useReducer<State, Action>(reducer, initialState());
 
   return {
     state,

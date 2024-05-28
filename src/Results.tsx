@@ -9,11 +9,7 @@ interface ResultProps {
   note: (content: string) => void;
 }
 
-export default function Results({
-  state,
-  mark,
-  note,
-}: ResultProps): JSX.Element {
+export default function Results({ state, mark, note }: ResultProps) {
   return (
     <>
       <h2>Ervaring</h2>
@@ -37,7 +33,7 @@ export default function Results({
       <h2>Notities</h2>
       <textarea
         value={state.notes}
-        onChange={(event) => note(event.target.value)}
+        onChange={(event) => note((event.target as HTMLTextAreaElement).value)}
       />
     </>
   );

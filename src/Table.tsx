@@ -7,11 +7,7 @@ interface TableProps {
   select: Select;
 }
 
-export default function Table({
-  state,
-  select,
-  mark,
-}: TableProps): JSX.Element {
+export default function Table({ state, select, mark }: TableProps) {
   return (
     <table className="form">
       <thead>

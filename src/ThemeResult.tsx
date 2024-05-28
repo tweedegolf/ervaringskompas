@@ -1,6 +1,6 @@
 import { MAX_LEVEL, State } from './usePersistence';
 
-export default function ThemeResult({ state }: { state: State }): JSX.Element {
+export default function ThemeResult({ state }: { state: State }) {
   let totalScore = 0;
   let totalMax = 0;
 

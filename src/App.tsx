@@ -3,12 +3,13 @@ import Table from './Table';
 import usePersistence, { upload } from './usePersistence';
 import { copyLink, downloadFile, saveStateLocal } from './util';
 
-export default function App(): JSX.Element {
+export default function App() {
   const { state, select, mark, note, setState } = usePersistence();
 
   return (
     <>
       <h1>Ervaringskompas</h1>
+
       <p>
         Welke ervaring heb je opgedaan met deze beroepsactiviteit in de praktijk
         (in een huisartsgeneekundige setting)?
@@ -42,7 +43,7 @@ export default function App(): JSX.Element {
           <input
             type="file"
             id="upload"
-            onChange={(e) => upload(e.target, setState)}
+            onChange={(e) => upload(e.target as HTMLInputElement, setState)}
           />
         </label>
       </p>

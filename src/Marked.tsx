@@ -5,7 +5,7 @@ interface MarkedProps {
   mark: Mark;
 }
 
-export default function Marked({ state, mark }: MarkedProps): JSX.Element {
+export default function Marked({ state, mark }: MarkedProps) {
   const items = state.themes
     .map((theme, themeIndex) =>
       theme.experiences.map((experience, index) => {
