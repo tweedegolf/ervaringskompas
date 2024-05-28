@@ -1,5 +1,12 @@
-import { Reducer, useEffect, useReducer } from 'react';
+import { Reducer, useReducer } from 'react';
 import rawData from './data.json';
+import { decode } from './util';
+
+export interface StorageState {
+  levels: number[][];
+  marked: boolean[][];
+  notes: string;
+}
 
 export interface State {
   levels: string[];
@@ -22,6 +29,7 @@ export interface Experience {
 }
 
 export type Select = (theme: number, experience: number, level: number) => void;
+
 export type Mark = (theme: number, experience: number, marked: boolean) => void;
 
 export interface PersistenceState {
@@ -29,6 +37,7 @@ export interface PersistenceState {
   select: Select;
   mark: Mark;
   note: (content: string) => void;
+  setState: (state: State) => void;
 }
 
 export type ExperienceAction =
@@ -50,6 +59,10 @@ export type Action =
   | {
       type: 'note';
       content: string;
+    }
+  | {
+      type: 'state';
+      state: State;
     };
 
 const data = rawData as State;
@@ -91,40 +104,20 @@ function reducer(state: State, action: Action): State {
       return updateState(state, action, { marked: action.marked });
     case 'note':
       return { ...state, notes: action.content };
+    case 'state':
+      return action.state;
     default:
       throw new Error();
   }
 }
 
 function initialState(): State {
-  const localState = window.localStorage.getItem('persistence');
-  const defaultState = { levels: [], marked: [], notes: '' };
-  let { levels, marked, notes } = localState
-    ? JSON.parse(localState)
-    : defaultState;
+  const localState =
+    window.location.hash.slice(1) ||
+    window.localStorage.getItem('persistence') ||
+    '';
 
-  if (!levels || !marked) {
-    levels = [];
-    marked = [];
-    notes = '';
-  }
-
-  return {
-    ...data,
-    notes,
-    themes: data.themes.map((theme, themeIndex) => ({
-      ...theme,
-      experiences: theme.experiences.map((experience, experienceIndex) => ({
-        ...experience,
-        level: levels[themeIndex]
-          ? levels[themeIndex][experienceIndex] || 0
-          : 0,
-        marked: marked[themeIndex]
-          ? marked[themeIndex][experienceIndex] || false
-          : false,
-      })),
-    })),
-  };
+  return decode(data, localState);
 }
 
 export default function usePersistence(): PersistenceState {
@@ -133,21 +126,6 @@ export default function usePersistence(): PersistenceState {
     initialState()
   );
 
-  useEffect(() => {
-    window.localStorage.setItem(
-      'persistence',
-      JSON.stringify({
-        levels: state.themes.map((theme) =>
-          theme.experiences.map((experience) => experience.level)
-        ),
-        marked: state.themes.map((theme) =>
-          theme.experiences.map((experience) => experience.marked)
-        ),
-        notes: state.notes,
-      })
-    );
-  }, [state]);
-
   return {
     state,
     select: (theme: number, experience: number, level: number) =>
@@ -155,5 +133,22 @@ export default function usePersistence(): PersistenceState {
     mark: (theme: number, experience: number, marked: boolean) =>
       dispatch({ type: 'mark', theme, experience, marked }),
     note: (content: string) => dispatch({ type: 'note', content }),
+    setState: (state: State) => dispatch({ type: 'state', state: state }),
   };
+}
+
+export function upload(
+  input: HTMLInputElement,
+  setState: (state: State) => void
+) {
+  if (!input.files || !input.files[0]) {
+    return;
+  }
+
+  const reader = new FileReader();
+  reader.addEventListener('load', () => {
+    setState(decode(data, reader.result?.toString() || ''));
+    window.alert('Het bestand is succesvol geladen.');
+  });
+  reader.readAsText(input.files[0]);
 }

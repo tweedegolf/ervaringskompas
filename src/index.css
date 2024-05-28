@@ -115,9 +115,14 @@ textarea {
   margin-bottom: 0.5rem;
   border: 1px solid #eaeaea;
   background-color: #fafafa;
+  max-width: 30rem;
 }
 
 .legenda h2 {
+  margin-bottom: 0.5rem;
+}
+
+.legenda ol {
   margin-bottom: 0.5rem;
 }
 
@@ -150,8 +155,16 @@ table.form th.theme {
   border-bottom: 1px solid #000;
 }
 
+table.form tr.marked {
+  background-color: rgba(255, 225, 0, 0.1);
+}
+
+table.form thead th {
+  padding: 0.5rem;
+}
+
 table.form tbody td {
-  width: 50px;
+  width: 2.5rem;
 }
 
 table.form tbody td label {
@@ -189,6 +202,14 @@ table.form tbody input {
 
 table.form tr.selectable:hover {
   background: #fafafa;
+}
+
+@media screen and (max-width: 768px) {
+  table.form th:last-child {
+    max-width: 2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
 }
 
 /* result table styling */
@@ -246,4 +267,65 @@ table.form tr.selectable:hover {
   .result td:nth-child(2) {
     padding: 0.25rem 0.5rem;
   }
+}
+
+.save span,
+.save button {
+  display: inline-block;
+  background: #4472c4;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  margin: 0.5rem 0.5rem 0 0;
+}
+
+.save span:hover,
+.save button:hover {
+  background: #2e6ab3;
+}
+
+.save input {
+  display: none;
+}
+
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0.25rem 0.5rem 0 0.5rem;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent;
+  z-index: 100;
+  opacity: 0;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%) translateY(-100%);
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  border-radius: 0.25rem;
+  pointer-events: none;
+  opacity: 0;
+}
+
+[data-tooltip]:hover::after,
+[data-tooltip]:hover::before {
+  opacity: 1
 }

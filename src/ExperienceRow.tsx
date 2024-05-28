@@ -22,19 +22,14 @@ export default function ExperienceRow({
   onSelect,
 }: ExperienceRowProps): JSX.Element {
   return (
-    <tr className="selectable">
-      <td style={{ borderBottomColor: color, borderLeftColor: color }}>
-        <label htmlFor={`check-${themeIndex}-${index}`} title="markeren">
-          <input
-            type="checkbox"
-            id={`check-${themeIndex}-${index}`}
-            name={`check-${themeIndex}-${index}`}
-            checked={marked}
-            onChange={(e) => onMark(e.target.checked)}
-          />
-        </label>
-      </td>
-      <th scope="row" style={{ borderBottomColor: color }}>
+    <tr className={`selectable ${marked ? 'marked' : ''}`}>
+      <th
+        scope="row"
+        style={{
+          borderBottomColor: color,
+          borderLeftColor: color,
+        }}
+      >
         {name}
       </th>
       {levels
@@ -47,11 +42,9 @@ export default function ExperienceRow({
             key={level}
             style={{
               borderBottomColor: color,
-              borderRightColor:
-                levelIndex === levels.length - 1 ? color : undefined,
             }}
           >
-            <label htmlFor={key} title={level}>
+            <label htmlFor={key} data-tooltip={level}>
               <input
                 type="radio"
                 name={`option-${themeIndex}-${index}`}
@@ -63,6 +56,22 @@ export default function ExperienceRow({
             </label>
           </td>
         ))}
+      <td
+        style={{
+          borderBottomColor: color,
+          borderRightColor: color,
+        }}
+      >
+        <label htmlFor={`check-${themeIndex}-${index}`} data-tooltip="markeren">
+          <input
+            type="checkbox"
+            id={`check-${themeIndex}-${index}`}
+            name={`check-${themeIndex}-${index}`}
+            checked={marked}
+            onChange={(e) => onMark(e.target.checked)}
+          />
+        </label>
+      </td>
     </tr>
   );
 }

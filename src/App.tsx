@@ -1,9 +1,10 @@
 import Results from './Results';
 import Table from './Table';
-import usePersistence from './usePersistence';
+import usePersistence, { upload } from './usePersistence';
+import { copyLink, downloadFile, saveStateLocal } from './util';
 
 export default function App(): JSX.Element {
-  const { state, select, mark, note } = usePersistence();
+  const { state, select, mark, note, setState } = usePersistence();
 
   return (
     <>
@@ -19,11 +20,32 @@ export default function App(): JSX.Element {
             <li key={level}>{level}</li>
           ))}
         </ol>
+        <p>
+          <strong>Markeren</strong> kan door het vakje rechts te selecteren.
+          Onder aan de pagina verschijnt een lijst van gemarkeerde items.
+        </p>
       </div>
       <hr />
       <Table state={state} select={select} mark={mark} />
       <hr />
       <Results state={state} mark={mark} note={note} />
+      <hr />
+      <h2>Opslaan</h2>
+      <p className="save">
+        <button onClick={() => saveStateLocal(state)}>
+          Opslaan in de browser
+        </button>
+        <button onClick={() => copyLink(state)}>Unieke link kopiëren</button>
+        <button onClick={() => downloadFile(state)}>Bestand downloaden</button>
+        <label htmlFor="upload">
+          <span>Bestand laden</span>
+          <input
+            type="file"
+            id="upload"
+            onChange={(e) => upload(e.target, setState)}
+          />
+        </label>
+      </p>
     </>
   );
 }
