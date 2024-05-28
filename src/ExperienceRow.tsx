@@ -52,6 +52,7 @@ export default function ExperienceRow({
                 value={levelIndex + 1}
                 onChange={() => onSelect(levelIndex + 1)}
                 checked={levelIndex + 1 === selected}
+                aria-label={level}
               />
             </label>
           </td>
@@ -69,6 +70,7 @@ export default function ExperienceRow({
             name={`check-${themeIndex}-${index}`}
             checked={marked}
             onChange={(e) => onMark((e.target as HTMLInputElement).checked)}
+            aria-label="markeren"
           />
         </label>
       </td>

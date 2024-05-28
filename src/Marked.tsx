@@ -20,6 +20,7 @@ export default function Marked({ state, mark }: MarkedProps) {
               name={`check-${index}`}
               checked={true}
               onChange={() => mark(themeIndex, index, false)}
+              aria-label="Verwijderen"
             />
             {experience.name}
           </li>

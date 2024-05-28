@@ -34,6 +34,7 @@ export default function Results({ state, mark, note }: ResultProps) {
       <textarea
         value={state.notes}
         onChange={(event) => note((event.target as HTMLTextAreaElement).value)}
+        aria-label="Notities"
       />
     </>
   );
