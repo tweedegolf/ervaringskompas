@@ -27,7 +27,7 @@ export default function Results({ state, mark, note }: ResultProps) {
         competentie.
       </p>
       <hr />
-      <h2>Remarkeerde ervaringen</h2>
+      <h2>Gemarkeerde ervaringen</h2>
       <Marked state={state} mark={mark} />
       <hr />
       <h2>Notities</h2>

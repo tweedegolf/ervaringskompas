@@ -6,6 +6,7 @@ interface ExperienceRowProps {
   levels: string[];
   selected: number;
   marked: boolean;
+  last: boolean;
   onMark: (marked: boolean) => void;
   onSelect: (level: number) => void;
 }
@@ -17,17 +18,21 @@ export default function ExperienceRow({
   color,
   levels,
   marked,
+  last,
   selected,
   onMark,
   onSelect,
 }: ExperienceRowProps) {
+  const border = `1px solid ${color}`;
+  const style = { borderBottom: last ? border : undefined };
+
   return (
     <tr className={`selectable ${marked ? 'marked' : ''}`}>
       <th
         scope="row"
         style={{
-          borderBottomColor: color,
-          borderLeftColor: color,
+          ...style,
+          borderLeft: border,
         }}
       >
         {name}
@@ -38,12 +43,7 @@ export default function ExperienceRow({
           key: `option-${themeIndex}-${index}-${levelIndex}`,
         }))
         .map(({ level, key }, levelIndex) => (
-          <td
-            key={level}
-            style={{
-              borderBottomColor: color,
-            }}
-          >
+          <td key={level} style={style}>
             <label htmlFor={key} data-tooltip={level}>
               <input
                 type="radio"
@@ -59,8 +59,8 @@ export default function ExperienceRow({
         ))}
       <td
         style={{
-          borderBottomColor: color,
-          borderRightColor: color,
+          ...style,
+          borderRight: border,
         }}
       >
         <label htmlFor={`check-${themeIndex}-${index}`} data-tooltip="markeren">

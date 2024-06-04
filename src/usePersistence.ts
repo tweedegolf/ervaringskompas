@@ -67,7 +67,7 @@ export type Action =
 
 const data = rawData as State;
 
-export const MAX_LEVEL = data.levels.length;
+export const MAX_LEVEL = data.levels.length - 1;
 
 function updateState(
   state: State,

@@ -3,7 +3,15 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
-  min-width: 454px;
+  min-width: 450px;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 *,
@@ -44,6 +52,7 @@ body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   line-height: 1.4;
   padding: 2rem;
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {
@@ -115,7 +124,6 @@ textarea {
   margin-bottom: 0.5rem;
   border: 1px solid #eaeaea;
   background-color: #fafafa;
-  max-width: 30rem;
 }
 
 .legenda h2 {
@@ -132,6 +140,7 @@ table {
   border-collapse: collapse;
   height: 1px;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 tbody th {
@@ -151,8 +160,13 @@ th {
 /* table form styling */
 
 table.form th.theme {
-  border: none;
-  border-bottom: 1px solid #000;
+  border: 1px solid;
+  padding: 1.5rem 1rem;
+}
+
+table.form td.white {
+  height: 1rem;
+  border: 0;
 }
 
 table.form tr.marked {
@@ -161,6 +175,7 @@ table.form tr.marked {
 
 table.form thead th {
   padding: 0.25rem 0.5rem;
+  position: relative;
 }
 
 table.form thead th svg {
@@ -169,29 +184,27 @@ table.form thead th svg {
 
 table.form tbody td {
   width: 2.5rem;
+  position: relative;
 }
 
 table.form tbody td label {
-  position: relative;
+  position: absolute;
   display: block;
   width: 100%;
   height: 100%;
   cursor: pointer;
+  top: 0;
 }
 
 table.form h3 {
-  margin-top: 1rem;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 table.form h3 span {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  line-height: 2rem;
-  text-align: center;
-  border-radius: 1rem;
-  margin-right: 1rem;
-  color: #fff;
+  margin-right: 0.5rem;
 }
 
 table.form tbody input {
@@ -221,12 +234,12 @@ table.form tr.selectable:hover {
 /* result table styling */
 
 .result table {
-  max-width: 100%;
+  width: 100%;
+  max-width: 60rem;
 }
 
 .result .progress {
   position: relative;
-  width: 30rem;
   padding: 0.25rem;
 }
 
@@ -249,16 +262,19 @@ table.form tr.selectable:hover {
 }
 
 .result th {
-  padding: 0.25rem
+  padding: 0.25rem;
+  width: 50%;
 }
 
 .result td {
   vertical-align: top;
+  width: 50%;
 }
 
 .result td:nth-child(2) {
   text-align: right;
-  padding: 0.25rem 1rem;
+  padding: 0.25rem 0.5rem;
+  width: 2.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -298,7 +314,7 @@ table.form tr.selectable:hover {
 }
 
 [data-tooltip] {
-  position: relative;
+  position: absolute;
 }
 
 [data-tooltip]::before {

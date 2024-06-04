@@ -23,10 +23,14 @@ export default function App() {
         </ol>
         <p>
           <strong>Markeren</strong> kan door het vakje rechts te selecteren.
+          <br />
+          Dit mag je gebruiken als je hier bijvoorbeeld extra aandacht aan wilt
+          besteden of een vraag over hebt.
+          <br />
           Onder aan de pagina verschijnt een lijst van gemarkeerde items.
         </p>
       </div>
-      <hr />
+
       <Table state={state} select={select} mark={mark} />
       <hr />
       <Results state={state} mark={mark} note={note} />

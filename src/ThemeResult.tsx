@@ -6,7 +6,10 @@ export default function ThemeResult({ state }: { state: State }) {
 
   const results = state.themes.map((theme) => {
     const max = theme.experiences.length * MAX_LEVEL;
-    const score = theme.experiences.reduce((acc, exp) => acc + exp.level, 0);
+    const score = theme.experiences.reduce(
+      (acc, exp) => acc + Math.max(exp.level - 1, 0),
+      0
+    );
 
     totalScore += score;
     totalMax += max;

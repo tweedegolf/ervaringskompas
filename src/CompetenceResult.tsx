@@ -7,7 +7,7 @@ export default function CompetenceResult({ state }: { state: State }) {
         const [score, max] = theme.experiences.reduce(
           (acc, exp) => {
             return [
-              acc[0] + exp.competences[index] * exp.level,
+              acc[0] + exp.competences[index] * Math.max(exp.level - 1, 0),
               acc[1] + exp.competences[index] * MAX_LEVEL,
             ];
           },

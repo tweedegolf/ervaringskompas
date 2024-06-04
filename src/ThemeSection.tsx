@@ -19,9 +19,13 @@ export default function ThemeSection({
   return (
     <>
       <tr>
+        <td colSpan={7} className="white"></td>
+      </tr>
+      <tr>
         <th
           style={{
-            borderBottomColor: color,
+            borderColor: color,
+            backgroundColor: color,
           }}
           colSpan={7}
           className="theme"
@@ -40,6 +44,7 @@ export default function ThemeSection({
           index={index}
           levels={levels}
           color={color}
+          last={index === experiences.length - 1}
           selected={experience.level}
           marked={experience.marked}
           onMark={(marked: boolean) => mark(themeIndex, index, marked)}
