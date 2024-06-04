@@ -2,7 +2,6 @@
 
 html {
   box-sizing: border-box;
-  font-size: 16px;
 }
 
 html,
@@ -11,7 +10,6 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-  min-width: 460px;
 }
 
 *,
@@ -53,11 +51,18 @@ body {
   line-height: 1.4;
   padding: 2rem;
   position: relative;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 768px) {
   body {
     padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  html, body {
+    font-size: 3.4vw;
   }
 }
 
@@ -155,13 +160,14 @@ th {
   border: 1px solid #f0f0f0;
   vertical-align: middle;
   min-width: 2rem;
+  padding: 0;
 }
 
 /* table form styling */
 
 table.form th.theme {
   border: 1px solid;
-  padding: 1.5rem 1rem;
+  padding: 1.25rem;
 }
 
 table.form td.white {
@@ -200,11 +206,22 @@ table.form h3 {
   margin: 0;
   padding: 0;
   color: white;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  line-height: 1.3;
 }
 
 table.form h3 span {
-  margin-right: 0.5rem;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  background-color: rgba(0, 0, 0, 0.15);
+  vertical-align: top;
 }
 
 table.form tbody input {
@@ -322,7 +339,7 @@ table.form tr.selectable:hover {
 [data-tooltip]::before {
   content: "";
   position: absolute;
-  top: -1px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   border-width: 0.25rem 0.5rem 0 0.5rem;

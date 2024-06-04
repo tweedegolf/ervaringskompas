@@ -31,7 +31,7 @@ export default function ThemeSection({
           className="theme"
         >
           <h3>
-            <span style={{ background: color }}>{themeIndex + 1}</span>
+            <span>{themeIndex + 1}</span>
             {name}
           </h3>
         </th>
