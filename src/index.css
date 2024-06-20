@@ -114,6 +114,36 @@ textarea {
   min-height: 8rem;
 }
 
+header {
+  display: flex;
+}
+
+header div:nth-child(1) {
+  flex: 0.6;
+}
+
+header div:nth-child(2) {
+  flex: 0.4;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: block;
+  }
+
+  header img {
+    max-width: 80%;
+  }
+}
+
+header h1 {
+  padding-left: 4rem;
+  font-size: 3rem;
+  background: url('./icon.svg') no-repeat left center;
+  background-size: 3rem;;
+}
+
 @media screen and (min-width: 1400px) {
   #root {
     max-width: 1262px;
@@ -294,6 +324,15 @@ table.form tr.selectable:hover {
   text-align: right;
   padding: 0.25rem 0.5rem;
   width: 2.5rem;
+}
+
+.tag span {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  vertical-align: text-top;
+  margin-right: 0.25rem;
 }
 
 @media screen and (max-width: 768px) {

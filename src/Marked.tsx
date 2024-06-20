@@ -22,6 +22,11 @@ export default function Marked({ state, mark }: MarkedProps) {
               onChange={() => mark(themeIndex, index, false)}
               aria-label="Verwijderen"
             />
+            <span className="tag">
+              <span style={{ background: theme.color }}></span>
+              {theme.name}:
+            </span>
+            &nbsp;
             {experience.name}
           </li>
         );

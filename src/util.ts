@@ -97,3 +97,10 @@ export function downloadFile(state: State) {
   link.click();
   link.remove();
 }
+
+export function hexToRgbA(color: string, opacity: number){
+  const c = color.substring(1).split('');
+  const n = parseInt('0x' + c.join(''), 16);
+
+  return `rgba(${[(n>>16)&255, (n>>8)&255, n&255].join(',')},${opacity})`;
+}

@@ -2,18 +2,30 @@ import Results from './Results';
 import Table from './Table';
 import usePersistence, { upload } from './usePersistence';
 import { copyLink, downloadFile, saveStateLocal } from './util';
+import voha from './voha.jpg';
 
 export default function App() {
   const { state, select, mark, note, setState } = usePersistence();
 
   return (
     <>
-      <h1>Ervaringskompas</h1>
+      <header>
+        <div>
+          <h1>Ervaringskompas</h1>
+          <p>
+            Als huisarts in opleiding is het de bedoeling om uiteindelijk op alle
+            huisartgeneeskundige thema’s ervaring en bekwaamheid op te bouwen.
+            Dit ervaringskompas is bedoeld als reflectie instrument om zelf in
+            kaart te brengen welke ervaring je -in de breedte en diepte van het
+            vak- hebt kunnen opdoen. Op basis daarvan kun je je leerproces in de
+            praktijk verder vorm en richting te geven.
+          </p>
+        </div>
+        <div>
+          <img src={voha} alt="Vervolgopleiding tot huisarts" />
+        </div>
+      </header>
 
-      <p>
-        Welke ervaring heb je opgedaan met deze beroepsactiviteit in de praktijk
-        (in een huisartsgeneekundige setting)?
-      </p>
       <div className="legenda">
         <h2>Legenda</h2>
         <ol>
