@@ -362,6 +362,14 @@ table.form tr.selectable:hover {
   margin: 0.5rem 0.5rem 0 0;
 }
 
+.save span svg,
+.save button svg {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.75rem;
+  vertical-align: text-top;
+}
+
 .save span:hover,
 .save button:hover {
   background: #2e6ab3;
