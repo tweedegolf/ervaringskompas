@@ -35,7 +35,15 @@ export default function Results({ state, mark, note }: ResultProps) {
         value={state.notes}
         onChange={(event) => note((event.target as HTMLTextAreaElement).value)}
         aria-label="Notities"
+        rows={state.notes.split(/\r\n|\r|\n/).length}
       />
+      <div className="print-notes">
+        {state.notes.split('\n').map((item, key) => (
+          <p key={key}>
+            {item}
+          </p>
+        ))}
+      </div>
     </>
   );
 }

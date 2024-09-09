@@ -43,66 +43,39 @@ export default function App() {
         </p>
       </div>
 
-      <p className="save">
-        <label htmlFor="load">
-          <span>
-            <svg>
-              <use xlinkHref="#icon-folder-open" />
-            </svg>
-            Eerdere versie laden
-          </span>
-          <input
-            type="file"
-            id="load"
-            onChange={(e) => upload(e.target as HTMLInputElement, setState)}
-          />
-        </label>
-      </p>
-
       <Table state={state} select={select} mark={mark} />
       <hr />
       <Results state={state} mark={mark} note={note} />
-      <hr />
-      <h2>Opslaan</h2>
-      <p>
-        Om je ingevulde gegevens te bewaren heb je drie opties.
-        Als je op een persoonlijk apparaat werkt kun je de huidige toestand opslaan in je browser.
-        Je kunt ook een link kopiëren en deze ergens veilige bewaren,
-        of een bestand downloaden en deze op een veilige plek opslaan.
-      </p>
-      <p className="save">
-        <button onClick={() => saveStateLocal(state)}>
-          <svg>
-            <use xlinkHref="#icon-floppy-disk" />
-          </svg>
-          Opslaan in de browser
-        </button>
-        <button onClick={() => copyLink(state)}>
-          <svg>
-            <use xlinkHref="#icon-link" />
-          </svg>
-          Unieke link kopiëren
-        </button>
-        <button onClick={() => downloadFile(state)}>
-          <svg>
-            <use xlinkHref="#icon-download" />
-          </svg>
-          Bestand opslaan op computer
-        </button>
-        <label htmlFor="upload">
-          <span>
+      <div className="save-section">
+        <hr />
+        <h2>Opslaan</h2>
+        <p>
+          Om je ingevulde gegevens te bewaren heb je drie opties.
+          Als je op een persoonlijk apparaat werkt kun je de huidige toestand opslaan in je browser.
+          Je kunt ook een link kopiëren en deze ergens veilige bewaren,
+          of een bestand downloaden en deze op een veilige plek opslaan.
+        </p>
+        <p className="save">
+          <button onClick={() => saveStateLocal(state)}>
             <svg>
-              <use xlinkHref="#icon-folder-open" />
+              <use xlinkHref="#icon-floppy-disk" />
             </svg>
-            Eerdere versie laden
-          </span>
-          <input
-            type="file"
-            id="upload"
-            onChange={(e) => upload(e.target as HTMLInputElement, setState)}
-          />
-        </label>
-      </p>
+            Opslaan in de browser
+          </button>
+          <button onClick={() => copyLink(state)}>
+            <svg>
+              <use xlinkHref="#icon-link" />
+            </svg>
+            Unieke link kopiëren
+          </button>
+          <button onClick={() => window.print()}>
+            <svg>
+              <use xlinkHref="#icon-printer" />
+            </svg>
+            Printen
+          </button>
+        </p>
+      </div>
     </>
   );
 }

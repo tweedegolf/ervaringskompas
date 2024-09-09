@@ -417,3 +417,29 @@ table.form tr.selectable:hover {
 [data-tooltip]:hover::before {
   opacity: 1
 }
+
+.print-notes {
+  display: none;
+}
+
+@media print {
+  table.form thead {
+    display: none;
+  }
+  table.form th {
+    background: none !important;
+  }
+  table.form h3 {
+    color: #05164c;
+    text-shadow: none;
+  }
+  .save-section {
+    display: none;
+  }
+  textarea {
+    display: none;
+  }
+  .print-notes {
+    display: block;
+  }
+}
