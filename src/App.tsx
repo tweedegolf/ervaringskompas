@@ -1,11 +1,11 @@
 import Results from './Results';
 import Table from './Table';
-import usePersistence, { upload } from './usePersistence';
-import { copyLink, downloadFile, saveStateLocal } from './util';
+import usePersistence from './usePersistence';
+import { copyLink, saveStateLocal } from './util';
 import voha from './voha.jpg';
 
 export default function App() {
-  const { state, select, mark, note, setState } = usePersistence();
+  const { state, select, mark, note } = usePersistence();
 
   return (
     <>
