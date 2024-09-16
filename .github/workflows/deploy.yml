@@ -16,6 +16,9 @@ jobs:
         with:
           node-version: '20'
       - run: yarn && yarn build
+      - run: mkdir dist/vaardigheden
+      - run: cp dist/index.html dist/vaardigheden/index.html
+      - run: cp -R dist/assets dist/vaardigheden/assets
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist

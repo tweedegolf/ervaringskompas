@@ -67,10 +67,9 @@ export default function App() {
         <hr />
         <h2>Opslaan</h2>
         <p>
-          Om je ingevulde gegevens te bewaren heb je drie opties.
+          Om je ingevulde gegevens te bewaren heb je twee opties.
           Als je op een persoonlijk apparaat werkt kun je de huidige toestand opslaan in je browser.
-          Je kunt ook een link kopiëren en deze ergens veilige bewaren,
-          of een bestand downloaden en deze op een veilige plek opslaan.
+          Je kunt ook een link kopiëren en deze ergens veilige bewaren.
         </p>
         <p className="actions">
           <button onClick={() => saveStateLocal(state)}>
