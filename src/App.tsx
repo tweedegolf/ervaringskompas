@@ -1,11 +1,24 @@
 import Results from './Results';
+import Skills from './Skills';
 import Table from './Table';
 import usePersistence from './usePersistence';
 import { copyLink, saveStateLocal } from './util';
 import voha from './voha.jpg';
 
 export default function App() {
-  const { state, select, mark, note } = usePersistence();
+  const { state, select, mark, note, selectSkill, markSkill, noteSkill, navigate } = usePersistence();
+
+  if (state.skillMode) {
+    return (
+      <Skills
+        state={state}
+        navigate={navigate}
+        selectSkill={selectSkill}
+        markSkill={markSkill}
+        noteSkill={noteSkill}
+      />
+    );
+  }
 
   return (
     <>
@@ -35,13 +48,17 @@ export default function App() {
         </ol>
         <p>
           <strong>Markeren</strong> kan door het vakje rechts te selecteren.
-          <br />
           Dit mag je gebruiken als je hier bijvoorbeeld extra aandacht aan wilt
           besteden of een vraag over hebt.
-          <br />
           Onder aan de pagina verschijnt een lijst van gemarkeerde items.
         </p>
       </div>
+
+      <p className="actions">
+        <button onClick={() => navigate(true)}>
+          Vaardighedenkompas
+        </button>
+      </p>
 
       <Table state={state} select={select} mark={mark} />
       <hr />
@@ -55,7 +72,7 @@ export default function App() {
           Je kunt ook een link kopiëren en deze ergens veilige bewaren,
           of een bestand downloaden en deze op een veilige plek opslaan.
         </p>
-        <p className="save">
+        <p className="actions">
           <button onClick={() => saveStateLocal(state)}>
             <svg>
               <use xlinkHref="#icon-floppy-disk" />

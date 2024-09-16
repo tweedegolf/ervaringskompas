@@ -1,8 +1,22 @@
-import { State } from './usePersistence';
+import { data, State } from './usePersistence';
 
 const ENCODE_VERSION = 'e1';
 
-export function encode(state: State): string {
+export function encode(state: State, skillMode: boolean): string {
+  if (skillMode) {
+    const data = state.skills.reduce((acc, skillCategory) => {
+      const groups = skillCategory.groups.reduce((acc, skillGroup) => {
+        const items = skillGroup.items.reduce((acc, item) => {
+            return `${acc}${item.value === null ? '0' : (item.value ? '2' : '1')}${item.marked ? 'm' : ''}`;
+        }, '');
+        return `${acc}${items}`;
+      }, '');
+      return `${acc}${groups}`;
+    }, ENCODE_VERSION);
+  
+    return `${data}n${base64URLencode(state.skillNotes)}`;
+  }
+
   const data = state.themes.reduce((acc, theme) => {
     const exps = theme.experiences.reduce((acc, exp) => {
       return `${acc}${exp.level}${exp.marked ? 'm' : ''}`;
@@ -14,10 +28,14 @@ export function encode(state: State): string {
   return `${data}n${base64URLencode(state.notes)}`;
 }
 
-export function decode(data: State, input: string): State {
-  const populated = {
+export function decode(data: State, input: string, skillInput: string, skillMode: boolean): State {
+  let skillIndex = 0;
+
+  const populated: State = {
     ...data,
+    skillMode,
     notes: '',
+    skillNotes: '',
     themes: data.themes.map((theme) => ({
       ...theme,
       experiences: theme.experiences.map((experience) => ({
@@ -26,37 +44,73 @@ export function decode(data: State, input: string): State {
         marked: false,
       })),
     })),
+    skills: data.skills.map((skillCategory) => ({
+      ...skillCategory,
+      groups: skillCategory.groups.map((skillGroup) => ({
+        ...skillGroup,
+        items: skillGroup.items.map((item) => ({
+          ...item,
+          index: skillIndex++,
+          value: null,
+          marked: false,
+        })),
+      })),
+    })),
   };
 
-  if (input.slice(0, 2) !== ENCODE_VERSION) {
-    return populated;
-  }
+  if (input.slice(0, 2) === ENCODE_VERSION) {
+    let pos = 2;
 
-  let pos = 2;
-
-  for (const theme of populated.themes) {
-    if (input[pos] !== 's') {
-      break;
-    }
-    pos += 1;
-
-    for (const experience of theme.experiences) {
-      experience.level = parseInt(input[pos], 10);
+    for (const theme of populated.themes) {
+      if (input[pos] !== 's') {
+        break;
+      }
       pos += 1;
-
-      if (input[pos] === 'm') {
-        experience.marked = true;
+  
+      for (const experience of theme.experiences) {
+        experience.level = parseInt(input[pos], 10);
         pos += 1;
+  
+        if (input[pos] === 'm') {
+          experience.marked = true;
+          pos += 1;
+        }
       }
     }
+
+    if (input[pos] === 'n') {
+      pos += 1;
+      populated.notes = base64URLdecode(input.slice(pos));
+    }
   }
 
-  if (input[pos] !== 'n') {
-    return populated;
-  }
-  pos += 1;
+  if (skillInput.slice(0, 2) === ENCODE_VERSION) {
+    let pos = 2;
 
-  populated.notes = base64URLdecode(input.slice(pos));
+    for (const skillCategory of populated.skills) {
+      for (const skillGroup of skillCategory.groups) {
+        for (const item of skillGroup.items) {
+          let value = parseInt(skillInput[pos], 10);
+          if (value === 1) {
+            item.value = false;
+          } else if (value === 2) {
+            item.value = true;
+          }
+          pos += 1;
+    
+          if (skillInput[pos] === 'm') {
+            item.marked = true;
+            pos += 1;
+          }
+        }
+      }
+    }
+
+    if (skillInput[pos] === 'n') {
+      pos += 1;
+      populated.skillNotes = base64URLdecode(skillInput.slice(pos));
+    }
+  }
 
   return populated;
 }
@@ -74,13 +128,17 @@ export function base64URLdecode(str: string): string {
 }
 
 export function saveStateLocal(state: State) {
-  window.localStorage.setItem('persistence', encode(state));
+  if (state.skillMode) {
+    window.localStorage.setItem('skill-persistence', encode(state, true));
+  } else {
+    window.localStorage.setItem('persistence', encode(state, false));
+  }
 
   window.alert('De huidige staat is opgeslagen in de browser.');
 }
 
 export async function copyLink(state: State) {
-  window.location.hash = `#${encode(state)}`;
+  window.location.hash = `#${encode(state, state.skillMode)}`;
   await navigator.clipboard.writeText(window.location.href);
 
   window.alert(
@@ -88,10 +146,27 @@ export async function copyLink(state: State) {
   );
 }
 
+export function upload(
+  input: HTMLInputElement,
+  setState: (state: State) => void
+) {
+  if (!input.files || !input.files[0]) {
+    return;
+  }
+
+  const reader = new FileReader();
+  reader.addEventListener('load', () => {
+    setState(decode(data, reader.result?.toString() || '', '', false));
+    window.alert('Het bestand is succesvol geladen.');
+  });
+  reader.readAsText(input.files[0]);
+}
+
+
 export function downloadFile(state: State) {
   const link = document.createElement('a');
   link.setAttribute('download', 'ervaringskompas.txt');
-  const blob = new Blob([encode(state)], { type: 'text/plain' });
+  const blob = new Blob([encode(state, false)], { type: 'text/plain' });
   link.href = window.URL.createObjectURL(blob);
   document.body.appendChild(link);
   link.click();

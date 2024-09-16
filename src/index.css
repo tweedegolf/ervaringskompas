@@ -159,6 +159,7 @@ header h1 {
   margin-bottom: 0.5rem;
   border: 1px solid #eaeaea;
   background-color: #fafafa;
+  max-width: 40rem;
 }
 
 .legenda h2 {
@@ -214,13 +215,39 @@ table.form thead th {
   position: relative;
 }
 
+table.form.skills thead th {
+  max-width: 2rem;
+}
+
+table.form.skills thead th label {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 2;
+}
+
 table.form thead th svg {
+  width: 1.4rem;
+  height: 1.4rem;
   vertical-align: middle;
 }
 
 table.form tbody td {
   width: 2.5rem;
   position: relative;
+}
+
+table.form.skills tbody td.skill-grade,
+table.form.skills tbody td.skill-name {
+  width: auto;
+  padding: 0.5rem;
+}
+
+table.form.skills tbody td.skill-grade label {
+  left: 0;
+  padding: 0.5rem;
 }
 
 table.form tbody td label {
@@ -268,6 +295,21 @@ table.form tbody input {
 
 table.form tr.selectable:hover {
   background: #fafafa;
+}
+
+table.form.skills .skillCategory {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 0;
+  border: none;
+}
+
+
+table.form.skills .skillGroup {
+  background: #DAECF3;
+  color: #3eacd6;
+  font-weight: bold;
+  border: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -349,8 +391,8 @@ table.form tr.selectable:hover {
   }
 }
 
-.save span,
-.save button {
+.actions span,
+.actions button {
   display: inline-block;
   background: #4472c4;
   color: #fff;
@@ -362,20 +404,20 @@ table.form tr.selectable:hover {
   margin: 0.5rem 0.5rem 0 0;
 }
 
-.save span svg,
-.save button svg {
+.actions span svg,
+.actions button svg {
   width: 1rem;
   height: 1rem;
   margin-right: 0.75rem;
   vertical-align: text-top;
 }
 
-.save span:hover,
-.save button:hover {
+.actions span:hover,
+.actions button:hover {
   background: #2e6ab3;
 }
 
-.save input {
+.actions input {
   display: none;
 }
 

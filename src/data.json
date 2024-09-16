@@ -22,39 +22,111 @@
       "experiences": [
         {
           "name": "Schat de urgentie van de hulpvraag in en bepaalt de soort verrichting die noodzakelijk is (telefonisch consult, consult of visite).",
-          "competences": [1, 1, 0, 1, 0, 1, 0]
+          "competences": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ]
         },
         {
           "name": "Verheldert de hulpvraag, neemt de anamnese af en voert onderzoek uit.",
-          "competences": [1, 1, 0, 0, 0, 0, 1]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "name": "Voert aanvullende diagnostiek uit.",
-          "competences": [1, 0, 0, 0, 1, 1, 0]
+          "competences": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ]
         },
         {
           "name": "Stelt de behandeling en het beleid in, informeert en adviseert.",
-          "competences": [1, 1, 0, 0, 1, 0, 0]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
         },
         {
           "name": "Registreert en codeert.",
-          "competences": [0, 0, 0, 1, 0, 1, 0]
+          "competences": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ]
         },
         {
           "name": "Sluit de episode af door de behandeling en het beleid te evalueren.",
-          "competences": [1, 1, 0, 0, 0, 0, 1]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "name": "Neemt de anamnese af aan de telefoon bij een telefonisch consult. ",
-          "competences": [1, 1, 0, 0, 0, 0, 0]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "name": "Geeft telefonisch voorlichting en advies.",
-          "competences": [1, 1, 0, 1, 0, 0, 0]
+          "competences": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
         },
         {
           "name": "Superviseert (telefonische) consulten van de assistente en geeft feedback.",
-          "competences": [0, 1, 1, 1, 0, 1, 0]
+          "competences": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0
+          ]
         }
       ]
     },
@@ -64,47 +136,135 @@
       "experiences": [
         {
           "name": "Stelt het toestandsbeeld vast van een patiënt met acute ziektebeelden met behulp van de ABCDE methode en voert daarbij de noodzakelijke handelingen uit.",
-          "competences": [1, 1, 1, 1, 0, 1, 0]
+          "competences": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0
+          ]
         },
         {
           "name": "Handelt getrieerde consulten en visites naar urgentie af.",
-          "competences": [1, 1, 0, 1, 1, 1, 0]
+          "competences": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
         },
         {
           "name": "Legt bevindingen, diagnose en beleid vast en draagt deze helder over.",
-          "competences": [1, 1, 0, 1, 0, 0, 1]
+          "competences": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
         },
         {
           "name": "Superviseert gedelegeerde taken.",
-          "competences": [1, 1, 1, 0, 0, 0, 1]
+          "competences": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "name": "Rapporteert voorkomende incidenten en analyseert deze op verbeterpunten in de acute zorgverlening.",
-          "competences": [1, 1, 1, 0, 0, 0, 1]
+          "competences": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "name": "Bewaakt de vlotte afhandeling van de patiëntenstroom met als doel veilige, doelmatige en overbruggende zorg.",
-          "competences": [1, 1, 1, 0, 1, 0, 0]
+          "competences": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
         },
         {
           "name": "Organiseert het medisch beleid in samenwerking met andere (para) medische hulpverleners en mantelzorgers.",
-          "competences": [1, 1, 1, 1, 0, 0, 0]
+          "competences": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
         },
         {
           "name": "Handelt visites af conform de regelgeving ten aanzien van spoedritten.",
-          "competences": [1, 1, 0, 1, 1, 0, 0]
+          "competences": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ]
         },
         {
           "name": "Trieert telefonisch, stelt de urgentie vast, bepaalt het medisch beleid en geeft instructies in begrijpelijke taal.",
-          "competences": [1, 1, 1, 1, 0, 0, 0]
+          "competences": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
         },
         {
           "name": "Autoriseert binnen de tijdsnorm het handelen van de triage assistent.",
-          "competences": [1, 1, 1, 1, 0, 0, 1]
+          "competences": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ]
         },
         {
           "name": "Fungeert als eerste aanspreekpunt voor SEH, ambulance, apotheek, GGZ, thuiszorg en politie.",
-          "competences": [1, 1, 0, 1, 0, 0, 1]
+          "competences": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
         }
       ]
     },
@@ -114,35 +274,99 @@
       "experiences": [
         {
           "name": "Behandelt, controleert en organiseert de zorg voor patiënten met diabetes, HVZ en astma/COPD.",
-          "competences": [1, 0, 1, 1, 0, 1, 0]
+          "competences": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ]
         },
         {
           "name": "Registreert, deelt data met medebehandelaars en stelt beleid bij.",
-          "competences": [1, 0, 0, 1, 0, 1, 0]
+          "competences": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ]
         },
         {
           "name": "Begeleidt en evalueert de zorg verleend door assistente en Praktijkondersteuner Huisarts.",
-          "competences": [0, 0, 1, 1, 0, 1, 0]
+          "competences": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ]
         },
         {
           "name": "Markeert het moment dat er sprake is van een chronische ziekte, die behandeling en controle behoeft.",
-          "competences": [1, 0, 1, 1, 0, 0, 0]
+          "competences": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
         },
         {
           "name": "Verleent en organiseert zorg na ontslag uit het ziekenhuis.",
-          "competences": [1, 0, 0, 1, 0, 0, 0]
+          "competences": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
         },
         {
           "name": "Behandelt en begeleidt patiënten met zeldzame ziekten.",
-          "competences": [1, 1, 0, 0, 0, 0, 1]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "name": "Kiest - bij conflicterende richtlijnen - samen met de patiënt de meest passende behandeling.",
-          "competences": [1, 1, 0, 0, 1, 0, 1]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
         },
         {
           "name": "Maakt gebruik van moderne communicatietechnieken (ICT).",
-          "competences": [0, 1, 0, 1, 1, 0, 0]
+          "competences": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -152,35 +376,99 @@
       "experiences": [
         {
           "name": "Stelt vast of er sprake is van complexe problematiek.",
-          "competences": [1, 1, 0, 0, 0, 1, 0]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
         },
         {
           "name": "Stelt in samenspraak met de patiënt een behandelplan vast.",
-          "competences": [1, 1, 0, 0, 0, 0, 1]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "name": "Behandelt intercurrente ziekten in samenhang met bestaande (complexe) problematiek.",
-          "competences": [1, 0, 0, 1, 0, 1, 0]
+          "competences": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ]
         },
         {
           "name": "Bespreekt vroegtijdig de keuzes in aanvullende diagnostiek en/of behandeling rekening houdend met persoonlijke wensen en levensverwachting.",
-          "competences": [1, 1, 0, 0, 1, 1, 0]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0
+          ]
         },
         {
           "name": "Stemt taken bij de zorg voor ouderen af met andere bij de patiënt betrokken hulpverleners.",
-          "competences": [0, 0, 1, 1, 1, 0, 0]
+          "competences": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
         },
         {
           "name": "Bepaalt periodiek de zorgbehoefte van de ouderen in de praktijk (door screening en/of casefinding) en past het zorgaanbod daar waar mogelijk op aan.",
-          "competences": [0, 0, 0, 1, 1, 1, 1]
+          "competences": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
         },
         {
           "name": "Verbetert en bewaakt de veiligheid van de ouderenzorg in de praktijk, door onder meer periodieke medicatiereviews en valpreventieprogramma’s.",
-          "competences": [0, 0, 1, 0, 1, 1, 1]
+          "competences": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ]
         },
         {
           "name": "Bepaalt welk aandeel de huisartsvoorziening heeft in de zorg voor ouderen en stemt dit af met andere verantwoordelijken in deze zorg zoals de Gemeente (WMO).",
-          "competences": [0, 0, 1, 1, 1, 0, 0]
+          "competences": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -190,27 +478,75 @@
       "experiences": [
         {
           "name": "Voert een consult met een acuut ziek kind (leeftijd: 0-2 jaar).",
-          "competences": [1, 1, 0, 0, 1, 0, 1]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
         },
         {
           "name": "Voert een consult met een kind met lichamelijke klachten (leeftijd: 3-10 jaar).",
-          "competences": [1, 1, 0, 0, 0, 0, 1]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "name": "Voert een consult met een puber/adolescent (leeftijd: 11-23 jaar).",
-          "competences": [1, 1, 1, 0, 1, 0, 1]
+          "competences": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ]
         },
         {
           "name": "Maakt overgewicht bespreekbaar en begeleidt hierbij.",
-          "competences": [1, 1, 1, 0, 0, 0, 1]
+          "competences": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "name": "Signaleert problematische thuissituaties en begeleidt het gezin.",
-          "competences": [1, 1, 1, 0, 1, 0, 1]
+          "competences": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ]
         },
         {
           "name": "Schrijft medicatie voor aan kinderen.",
-          "competences": [1, 1, 0, 0, 0, 0, 0]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -220,35 +556,99 @@
       "experiences": [
         {
           "name": "Begeleidt een patiënt met spanningsklachten, overspanning of burn-out.",
-          "competences": [1, 1, 1, 1, 0, 0, 0]
+          "competences": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
         },
         {
           "name": "Zet bij een patiënt met angst- en stemmingsklachten /stoornissen de benodigde behandeling in.",
-          "competences": [1, 1, 1, 0, 0, 1, 0]
+          "competences": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
         },
         {
           "name": "Diagnosticeert acute psychiatrische stoornissen en zet de benodigde behandeling in.",
-          "competences": [1, 1, 1, 0, 0, 0, 1]
+          "competences": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "name": "Schat bij suïcidaliteit het gevaar in voor de patiënt en diens omgeving en zet de benodigde hulp in.",
-          "competences": [1, 1, 0, 1, 1, 0, 0]
+          "competences": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ]
         },
         {
           "name": "Motiveert een patiënt met (een verhoogd risico voor) verslavingsgedrag voor passende zorg.",
-          "competences": [1, 1, 0, 0, 1, 0, 1]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
         },
         {
           "name": "Zet bij een patiënt met gevolgen van traumatische gebeurtenissen de benodigde zorg in.",
-          "competences": [1, 1, 1, 0, 0, 0, 1]
+          "competences": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "name": "Signaleert persoonlijkheidstrekken en -stoornissen, definieert de gevolgen hiervan voor de zorgverlening en adviseert de patiënt om indien nodig passende begeleiding te vinden.",
-          "competences": [1, 1, 0, 0, 0, 0, 0]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "name": "Zet bij kinderen met afwijkend gedrag passende diagnostiek en behandeling in.",
-          "competences": [1, 0, 1, 0, 1, 0, 0]
+          "competences": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -258,23 +658,63 @@
       "experiences": [
         {
           "name": "Stelt de werkhypothese SOLK, geeft uitleg en behandelt stapsgewijs.",
-          "competences": [1, 1, 0, 0, 0, 0, 1]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
         },
         {
           "name": "Maakt gebruik van klachtenregistratie om patronen in klachten en beïnvloedende factoren te ontdekken.",
-          "competences": [1, 1, 0, 0, 0, 0, 0]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "name": "Voert een verwijsgesprek met een patiënt met SOLK.",
-          "competences": [1, 1, 1, 0, 1, 0, 0]
+          "competences": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
         },
         {
           "name": "Bespreekt de gevolgen van de klachten voor de arbeidsparticipatie bij (dreigende) langdurige arbeidsongeschiktheid.",
-          "competences": [0, 0, 1, 0, 1, 0, 0]
+          "competences": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
         },
         {
           "name": "Biedt langdurige begeleiding en houdt de regie bij een patiënt met ernstige SOLK.",
-          "competences": [1, 1, 0, 1, 0, 0, 0]
+          "competences": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
         }
       ]
     },
@@ -284,43 +724,123 @@
       "experiences": [
         {
           "name": "Voert een gesprek over het naderend levenseinde.",
-          "competences": [1, 1, 0, 0, 1, 0, 1]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
         },
         {
           "name": "Past beleid aan op basis van de fase waarin de patiënt in de palliatieve fase verkeert: in het bijzonder de overgang van curatieve fase naar de palliatieve fase en de stervensfase.",
-          "competences": [1, 1, 1, 1, 1, 0, 0]
+          "competences": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
         },
         {
           "name": "Behandelt de specifieke problemen in de palliatieve / terminale fase.",
-          "competences": [1, 1, 1, 0, 1, 1, 0]
+          "competences": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ]
         },
         {
           "name": "Anticipeert op de vaak complexe problemen en klachten tijdens de palliatieve fase / terminale zorg.",
-          "competences": [1, 1, 1, 1, 1, 0, 1]
+          "competences": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ]
         },
         {
           "name": "Organiseert de palliatieve en terminale zorg, stuurt andere zorgverleners aan en is aanspreekpunt voor de patiënt en zijn omgeving.",
-          "competences": [1, 1, 1, 1, 1, 0, 1]
+          "competences": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ]
         },
         {
           "name": "Verleent zorg aan naasten.",
-          "competences": [1, 1, 1, 1, 0, 0, 1]
+          "competences": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ]
         },
         {
           "name": "Begeleidt een patiënt en diens naasten bij het verlies (rouwverwerking).",
-          "competences": [1, 1, 0, 1, 0, 0, 1]
+          "competences": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
         },
         {
           "name": "Voert palliatieve sedatie uit.",
-          "competences": [1, 1, 1, 1, 0, 0, 1]
+          "competences": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ]
         },
         {
           "name": "Voert de wens tot euthanasie uit of draagt deze over in geval van persoonlijke gewetensbezwaren.",
-          "competences": [1, 1, 1, 1, 1, 0, 1]
+          "competences": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ]
         },
         {
           "name": "Levert persoonlijke continuïteit van zorgverlening.",
-          "competences": [1, 1, 0, 1, 0, 0, 1]
+          "competences": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
         }
       ]
     },
@@ -330,39 +850,111 @@
       "experiences": [
         {
           "name": "Stelt, samen met een patiënt, een individueel zorgplan op ter preventie van een chronische ziekte.",
-          "competences": [1, 1, 0, 0, 1, 1, 0]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0
+          ]
         },
         {
           "name": "Verkent op indicatie de leefstijl van een patiënt en bespreekt mogelijkheden tot verandering.",
-          "competences": [1, 1, 0, 0, 1, 0, 1]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
         },
         {
           "name": "Adviseert over verschillende preventieve activiteiten.",
-          "competences": [1, 1, 0, 0, 1, 1, 0]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0
+          ]
         },
         {
           "name": "Selecteert personen en patiënten met een verhoogd gezondheidsrisico.",
-          "competences": [1, 0, 1, 1, 0, 1, 0]
+          "competences": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ]
         },
         {
           "name": "Voert programmatische preventie uit.",
-          "competences": [0, 0, 1, 1, 1, 0, 0]
+          "competences": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
         },
         {
           "name": "Bepaalt welke rol de huisarts heeft in een nieuw of bestaand preventieproject en voert deze uit.",
-          "competences": [0, 0, 0, 1, 1, 1, 0]
+          "competences": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
         },
         {
           "name": "Is betrokken bij de uitvoering van bevolkingsonderzoek zoals door de beroepsgroep met de overheid is overeengekomen en voert zijn aandeel hierin uit.",
-          "competences": [1, 1, 1, 0, 0, 1, 1]
+          "competences": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ]
         },
         {
           "name": "Brengt een erfelijke ziekte in de familie van een patiënt in kaart en bespreekt of screening of diagnostiek aan de orde is.",
-          "competences": [1, 1, 0, 0, 0, 0, 0]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "name": "Bespreekt bij een bestaande kinderwens preventieve mogelijkheden voorafgaand aan een toekomstige zwangerschap.",
-          "competences": [1, 1, 0, 0, 1, 0, 1]
+          "competences": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
         }
       ]
     },
@@ -372,31 +964,893 @@
       "experiences": [
         {
           "name": "Formuleert een persoonlijke en een praktijkvisie op de huisartsenzorg.",
-          "competences": [0, 0, 0, 1, 1, 0, 1]
+          "competences": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ]
         },
         {
           "name": "Stelt een verbeterplan op en voert dit uit.",
-          "competences": [1, 0, 1, 1, 0, 0, 0]
+          "competences": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
         },
         {
           "name": "Superviseert individuele praktijkmedewerkers bij het uitvoeren van voorbehouden handelingen.",
-          "competences": [1, 0, 1, 1, 0, 1, 0]
+          "competences": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ]
         },
         {
           "name": "Levert een bijdrage aan de patiëntveiligheid door het melden, analyseren en afhandelen van patiëntveiligheidsproblemen.",
-          "competences": [1, 0, 1, 0, 0, 0, 0]
+          "competences": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
         },
         {
           "name": "Heeft inzicht in de financiering en bedrijfsvoering van de huisartsenpraktijk, declareert eigen verrichtingen en adviseert patiënten over de financiële consequenties van een medische behandeling/diagnostiek.",
-          "competences": [0, 1, 1, 1, 0, 0, 0]
+          "competences": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
         },
         {
           "name": "Vertegenwoordigt de opleidingspraktijk voor een specifiek thema in een multidisciplinair overleg.",
-          "competences": [0, 0, 0, 1, 1, 1, 0]
+          "competences": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
         },
         {
           "name": "Stemt de praktijkvoering en informatievoorziening af op de behoeften van de patiëntenpopulatie.",
-          "competences": [0, 0, 1, 1, 0, 0, 1]
+          "competences": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "diagnostiek",
+      "groups": [
+        {
+          "name": "Algemeen",
+          "items": [
+            {
+              "name": "inspectie habitus en sec. geslachtskenmerken",
+              "basic": true
+            },
+            {
+              "name": "onderzoek pasgeborene ",
+              "basic": true
+            },
+            {
+              "name": "dood vaststellen",
+              "basic": true
+            },
+            {
+              "name": "superviseren vaardigheid (co-ass, PA, POH)",
+              "basic": true
+            }
+          ]
+        },
+        {
+          "name": "Ogen",
+          "items": [
+            {
+              "name": "inspectie (conjuntiva, sclerae, cornea, diepte/helderheid VOK, iris, pupil/pupilreacties, oogleden, adnexen, traansysteem)",
+              "basic": true
+            },
+            {
+              "name": "oogstand/volgbewegingen (Corneareflexbeeldjes, afdekproef)",
+              "basic": true
+            },
+            {
+              "name": "onderzoek met loep, strijk/doorvallend licht, anaestheticum, fluoresceïne",
+              "basic": true
+            },
+            {
+              "name": "visusonderzoek kinderen/volwassenen (stenopeïsche opening)",
+              "basic": true
+            },
+            {
+              "name": "gezichtsveldonderzoek (confrontatiemethode, Amslertest)",
+              "basic": true
+            },
+            {
+              "name": "directe fundoscopie (media, papil, retinavaten, gebruik mydriaticum)",
+              "basic": false
+            },
+            {
+              "name": "indirecte fundoscopie",
+              "basic": false
+            },
+            {
+              "name": "diagnostisch refractioneren ±0,5D",
+              "basic": false
+            },
+            {
+              "name": "meting oogboldruk",
+              "basic": false
+            },
+            {
+              "name": "testen stereo en kleurenzien",
+              "basic": false
+            },
+            {
+              "name": "spleetlamponderzoek",
+              "basic": false
+            },
+            {
+              "name": "testen doorgankelijkheid traansysteem",
+              "basic": false
+            }
+          ]
+        },
+        {
+          "name": "KNO",
+          "items": [
+            {
+              "name": "onderzoek mond/keel (bodem, tong, keelholte, speekselklieren inclusief bimanuele palpatie, kaakgewrichten)",
+              "basic": true
+            },
+            {
+              "name": "indirecte laryngoscopie",
+              "basic": false
+            },
+            {
+              "name": "onderzoek neus (inspectie, rhinoscopie, palpatie)",
+              "basic": true
+            },
+            {
+              "name": "inspectie oren uitwendig en omgeving",
+              "basic": true
+            },
+            {
+              "name": "beoordeling gehoorgang en trommelvlies(otoscopie)",
+              "basic": true
+            },
+            {
+              "name": "fluisterspraaktest",
+              "basic": true
+            },
+            {
+              "name": "stemvorkproeven Rinne/Weber",
+              "basic": true
+            },
+            {
+              "name": "(screenings-) audiometrie",
+              "basic": false
+            },
+            {
+              "name": "tympanometrie",
+              "basic": false
+            }
+          ]
+        },
+        {
+          "name": "Hals",
+          "items": [
+            {
+              "name": "onderzoek larynx, trachea, schildklier, lymfklieren",
+              "basic": true
+            }
+          ]
+        },
+        {
+          "name": "Mammae",
+          "items": [
+            {
+              "name": "inspectie. Palpatie (incl. regionale lymfklieren) ",
+              "basic": true
+            }
+          ]
+        },
+        {
+          "name": "Longen",
+          "items": [
+            {
+              "name": "inspectie/percussie/auscultatie",
+              "basic": true
+            },
+            {
+              "name": "percutane zuurstofsaturatiemeting (pulsoximetrie)",
+              "basic": true
+            },
+            {
+              "name": "spirometrie (kwaliteit, ROER systematiek)",
+              "basic": true
+            }
+          ]
+        },
+        {
+          "name": "Bloedsomloop",
+          "items": [
+            {
+              "name": "hart(palpatie ictus, percussie hartgrenzen, auscultatie harttonen/souffles)",
+              "basic": true
+            },
+            {
+              "name": "eventrecorder/holter in eigen beheer",
+              "basic": false
+            },
+            {
+              "name": "ECG (laten) maken en beoordelen",
+              "basic": true
+            },
+            {
+              "name": "polskwaliteiten/deficit, capillary refill, bloeddruk, CVD, pulsaties, veneuze circulatie",
+              "basic": true
+            },
+            {
+              "name": "30-minuten bloeddrukmeting",
+              "basic": true
+            },
+            {
+              "name": "24-uurs bloeddrukmeting in eigen beheer",
+              "basic": true
+            },
+            {
+              "name": "Doppler onderzoek (bepalen EAI)",
+              "basic": true
+            }
+          ]
+        },
+        {
+          "name": "Zenuwstelsel",
+          "items": [
+            {
+              "name": "onderzoek bewustzijn",
+              "basic": true
+            },
+            {
+              "name": "meningeale prikkeling, HZ, coördinatie",
+              "basic": true
+            },
+            {
+              "name": "Fast-test",
+              "basic": true
+            },
+            {
+              "name": "motoriek, spierkracht, tonus, reflexen, sensibiliteit",
+              "basic": true
+            },
+            {
+              "name": "kiepproef Dix-Hallpike",
+              "basic": true
+            },
+            {
+              "name": "Epley manoeuvre",
+              "basic": false
+            },
+            {
+              "name": "Head Impulse Test (HIT)",
+              "basic": true
+            },
+            {
+              "name": "MMSE afnemen",
+              "basic": true
+            },
+            {
+              "name": "4-DKL afnemen",
+              "basic": true
+            }
+          ]
+        },
+        {
+          "name": "Abdomen",
+          "items": [
+            {
+              "name": "inspectie, auscultatie(darmgeruis, souffles), percussie, palpatie (milt, lever, lymfklieren)",
+              "basic": true
+            },
+            {
+              "name": "onderzoek breukpoorten",
+              "basic": true
+            },
+            {
+              "name": "onderzoek uitwendige geslachtsorganen (ook transilluminatie)",
+              "basic": true
+            },
+            {
+              "name": "vaginaal speculum onderzoek",
+              "basic": true
+            },
+            {
+              "name": "vaginaal toucher/ bimanueel onderzoek",
+              "basic": true
+            },
+            {
+              "name": "afnemen cervixuitstrijkje",
+              "basic": true
+            },
+            {
+              "name": "afname materiaal SOA-onderzoek (♀ en ♂)",
+              "basic": true
+            },
+            {
+              "name": "onderzoek fluor vaginalis",
+              "basic": true
+            },
+            {
+              "name": "zwangerschap: uitwendig onderzoek. Uterus (fundushoogte, contracties/tonus, cortonen)",
+              "basic": false
+            },
+            {
+              "name": "onderzoek anogenitale regio/bekkenbodem",
+              "basic": true
+            },
+            {
+              "name": "rectaal toucher",
+              "basic": true
+            },
+            {
+              "name": "onderzoek prostaat (palpatie)",
+              "basic": true
+            },
+            {
+              "name": "proctoscopie",
+              "basic": false
+            },
+            {
+              "name": "onderzoek urine strip",
+              "basic": true
+            },
+            {
+              "name": "maken/beoordelen dipslide",
+              "basic": true
+            },
+            {
+              "name": "maken /beoordelen urinesediment",
+              "basic": false
+            },
+            {
+              "name": "spermaonderzoek",
+              "basic": false
+            },
+            {
+              "name": "postcoïtum test",
+              "basic": false
+            },
+            {
+              "name": "echoscopie",
+              "basic": false
+            }
+          ]
+        },
+        {
+          "name": "Bewegingsapparaat",
+          "items": [
+            {
+              "name": "nek (incl. wortelprikkeling)",
+              "basic": true
+            },
+            {
+              "name": "thorax (incl. clavicula, sternum, scapula, costa)",
+              "basic": true
+            },
+            {
+              "name": "rug (wervelkolom, incl. wortelprikkeling/Lasèque)",
+              "basic": true
+            },
+            {
+              "name": "schoudergordel, arm, elleboog, pols, hand",
+              "basic": true
+            },
+            {
+              "name": "bekken/heup (incl. beenlengte/verschil), knie, enkel, voet",
+              "basic": true
+            }
+          ]
+        },
+        {
+          "name": "Huid",
+          "items": [
+            {
+              "name": "onderzoek huid, nagels, haren (beschrijving efflorescenties)",
+              "basic": true
+            },
+            {
+              "name": "KOH preparaat huid, haren, nagels",
+              "basic": false
+            },
+            {
+              "name": "stansbiopt",
+              "basic": true
+            },
+            {
+              "name": "shave biopt",
+              "basic": true
+            },
+            {
+              "name": "teledermatologie",
+              "basic": false
+            },
+            {
+              "name": "huidpriktest",
+              "basic": false
+            },
+            {
+              "name": "dermatoscopie",
+              "basic": false
+            }
+          ]
+        },
+        {
+          "name": "Endocrien",
+          "items": [
+            {
+              "name": "BMI, MO (middelomtrek) bepalen",
+              "basic": true
+            },
+            {
+              "name": "glucose bepaling bloed",
+              "basic": true
+            },
+            {
+              "name": "onderzoek diabetische voet",
+              "basic": true
+            },
+            {
+              "name": "(de) hydratie toestand bepalen",
+              "basic": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Therapie",
+      "groups": [
+        {
+          "name": "Algemeen",
+          "items": [
+            {
+              "name": "injectie sc/iv/im",
+              "basic": true
+            },
+            {
+              "name": "sc medicatie depot preparaat inbrengen",
+              "basic": true
+            },
+            {
+              "name": "BLS (met AED), handelingen bij bewusteloze (Rautek, stabiele zijligging)",
+              "basic": true
+            },
+            {
+              "name": "cardiopulmonale resuscitatie (adv life supp)",
+              "basic": true
+            },
+            {
+              "name": "hyposensibilisatie",
+              "basic": false
+            },
+            {
+              "name": "superviseren vaardigheid ",
+              "basic": true
+            }
+          ]
+        },
+        {
+          "name": "Ogen",
+          "items": [
+            {
+              "name": "EHBO oogletsel (spoelen, medicatie,verband)",
+              "basic": true
+            },
+            {
+              "name": "behandeling hordeolum",
+              "basic": true
+            },
+            {
+              "name": "behandeling blefaritis ",
+              "basic": true
+            },
+            {
+              "name": "verwijdering corpus alienum ",
+              "basic": true
+            },
+            {
+              "name": "verwijderen roestring",
+              "basic": true
+            },
+            {
+              "name": "behandeling chalazion (curettage/injectie)",
+              "basic": false
+            },
+            {
+              "name": "massage/doorspuiten traankanaal",
+              "basic": false
+            }
+          ]
+        },
+        {
+          "name": "Neus",
+          "items": [
+            {
+              "name": "verwijderen corpus alienum",
+              "basic": true
+            },
+            {
+              "name": "tamponeren bloeding",
+              "basic": true
+            },
+            {
+              "name": "cautherisatie locus Kiesselbachi",
+              "basic": false
+            }
+          ]
+        },
+        {
+          "name": "Oor",
+          "items": [
+            {
+              "name": "reinigen gehoorgang (lavage, haakje/lus)",
+              "basic": true
+            },
+            {
+              "name": "verwijderen corpus alienum",
+              "basic": true
+            },
+            {
+              "name": "inbrengen tampon (gaas of merocel)",
+              "basic": true
+            }
+          ]
+        },
+        {
+          "name": "Bloedsomloop",
+          "items": [
+            {
+              "name": "Handelingen bij tachycardie",
+              "basic": true
+            }
+          ]
+        },
+        {
+          "name": "Longen",
+          "items": [
+            {
+              "name": "verwijderen corpus alienum (ook Heimlich)",
+              "basic": true
+            },
+            {
+              "name": "toedienen/instructie medicatie via inhalatie (voorzetkamer.verneveling)",
+              "basic": true
+            },
+            {
+              "name": "toedienen zuurstof",
+              "basic": true
+            },
+            {
+              "name": "intuberen",
+              "basic": false
+            },
+            {
+              "name": "tracheotomie",
+              "basic": false
+            },
+            {
+              "name": "naald spanningspneumothorax",
+              "basic": false
+            }
+          ]
+        },
+        {
+          "name": "Abdomen",
+          "items": [
+            {
+              "name": "Incisie perianaal abces",
+              "basic": true
+            },
+            {
+              "name": "incisie getromboseerd hemorroïd",
+              "basic": false
+            },
+            {
+              "name": "ligatuur inwendig hemorroïd (Barron)",
+              "basic": false
+            },
+            {
+              "name": "ascitespunctie",
+              "basic": false
+            },
+            {
+              "name": "verwisselen katheter (supra pubis)",
+              "basic": true
+            },
+            {
+              "name": "verwisselen katheter (urethra ♀ en ♂)",
+              "basic": true
+            },
+            {
+              "name": "behandelen condylomata acuminata ([elektro]coagulatie/cryotherapie)",
+              "basic": true
+            },
+            {
+              "name": "inbrengen IUD (koperhoudend)",
+              "basic": true
+            },
+            {
+              "name": "inbrengen IUD (Mirena)",
+              "basic": true
+            },
+            {
+              "name": "afdraaien cervixpoliep",
+              "basic": false
+            },
+            {
+              "name": "inbrengen/wisselen pessarium",
+              "basic": true
+            },
+            {
+              "name": "aanmeten pessarium occlusivum",
+              "basic": false
+            },
+            {
+              "name": "verloskundige zorg",
+              "basic": false
+            },
+            {
+              "name": "circumcisie",
+              "basic": false
+            },
+            {
+              "name": "sterilisatie man",
+              "basic": false
+            }
+          ]
+        },
+        {
+          "name": "Bewegingsapparaat",
+          "items": [
+            {
+              "name": "aanleggen vingerspalk (bij Malletvinger)",
+              "basic": true
+            },
+            {
+              "name": "aanleggen mitella/collar&cuff",
+              "basic": true
+            },
+            {
+              "name": "aanleggen zwachtel, drukverband",
+              "basic": true
+            },
+            {
+              "name": "aanleggen tape verband (enkel)",
+              "basic": true
+            },
+            {
+              "name": "injectie schouder (subacromiaal)",
+              "basic": true
+            },
+            {
+              "name": "Injectie schouder (gewricht)",
+              "basic": true
+            },
+            {
+              "name": "injectie elleboog (epicondyl)",
+              "basic": true
+            },
+            {
+              "name": "injectie elleboog (bursa olecrani)",
+              "basic": true
+            },
+            {
+              "name": "injectie pols (Quervain)",
+              "basic": true
+            },
+            {
+              "name": "injectie pols (CTS)",
+              "basic": true
+            },
+            {
+              "name": "injectie hand (triggerfinger)",
+              "basic": true
+            },
+            {
+              "name": "injectie heup (bursa trochanterica)",
+              "basic": true
+            },
+            {
+              "name": "injectie knie (bursa prepatelellaris)",
+              "basic": true
+            },
+            {
+              "name": "injectie knie (gewricht)",
+              "basic": true
+            },
+            {
+              "name": "punctie/injectie ganglion",
+              "basic": true
+            },
+            {
+              "name": "repositie luxatie (schouder)",
+              "basic": false
+            },
+            {
+              "name": "repositie luxatie (radiuskop/zondagsarmpje)",
+              "basic": true
+            },
+            {
+              "name": "repositie luxatie (vinger/teen)",
+              "basic": true
+            },
+            {
+              "name": "repositie luxatie (patella)",
+              "basic": false
+            },
+            {
+              "name": "behandeling fractuur (clavicula)",
+              "basic": false
+            },
+            {
+              "name": "behandeling fractuur (costa)",
+              "basic": true
+            },
+            {
+              "name": "behandeling fractuur (phalangen)",
+              "basic": false
+            },
+            {
+              "name": "Inbrengen/ verwijderen subcut. anticonceptie",
+              "basic": false
+            },
+            {
+              "name": "sclerosering varices",
+              "basic": false
+            }
+          ]
+        },
+        {
+          "name": "Huid",
+          "items": [
+            {
+              "name": "anesthesie (lokaal, Oberst)",
+              "basic": true
+            },
+            {
+              "name": "wondtoilet (incl. necrotomie)",
+              "basic": true
+            },
+            {
+              "name": "verwijderen verruca (scherpe lepel)",
+              "basic": true
+            },
+            {
+              "name": "verwijderen corpus alienum",
+              "basic": true
+            },
+            {
+              "name": "elektrocoagulatie",
+              "basic": true
+            },
+            {
+              "name": "cryotherapie (vloeibare N2)",
+              "basic": true
+            },
+            {
+              "name": "hechten wond/hechtingen verwijderen",
+              "basic": true
+            },
+            {
+              "name": "wondbehandeling/verbandleer",
+              "basic": true
+            },
+            {
+              "name": "behandeling brandwonden",
+              "basic": true
+            },
+            {
+              "name": "incisie/nabehandeling abces",
+              "basic": true
+            },
+            {
+              "name": "partiële nagelextractie, fenolisatie",
+              "basic": true
+            },
+            {
+              "name": "ontlasten sub-unguaal hematoom",
+              "basic": true
+            },
+            {
+              "name": "wigexcisie",
+              "basic": true
+            },
+            {
+              "name": "behandeling paronychia",
+              "basic": true
+            },
+            {
+              "name": "behandeling panaritium",
+              "basic": false
+            },
+            {
+              "name": "excisie naevus/benigne huidtumoren (+ PA)",
+              "basic": true
+            },
+            {
+              "name": "extirpatie atheroomcyste",
+              "basic": true
+            },
+            {
+              "name": "extirpatie lipoom",
+              "basic": true
+            },
+            {
+              "name": "behandeling ulcus cruris (ambulante compressie)",
+              "basic": true
+            }
+          ]
+        },
+        {
+          "name": "Palliatief",
+          "items": [
+            {
+              "name": "subctane pijnbestrijding",
+              "basic": null
+            },
+            {
+              "name": "epidurale pijnbestrijding",
+              "basic": null
+            },
+            {
+              "name": "inbrengen voedingssonde",
+              "basic": null
+            },
+            {
+              "name": "ascitespunctie",
+              "basic": null
+            },
+            {
+              "name": "palliatieve sedatie",
+              "basic": null
+            },
+            {
+              "name": "euthanasie",
+              "basic": null
+            }
+          ]
         }
       ]
     }
