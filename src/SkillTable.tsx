@@ -46,10 +46,9 @@ export default function SkillTable({ state, select, mark }: SkillTableProps) {
                   <th className="skillGroup"
                   colSpan={6}>{group.name}</th>
                 </tr>
-                {group.items.map((item, index) => {
-                  return (
+                {group.items.map((item, index) => (
                     <tr className="selectable" key={item.name}>
-                      <th scope="row">{index + 1} = {item.index}</th>
+                      <th scope="row">{index + 1}</th>
                       <td className="skill-grade">
                         <label data-tooltip={item.basic === null ? '*' : (item.basic ? 'Basisvaardigheid' : 'Facultatieve vaardigheid')}>
                           {item.basic === null ? '*' : (item.basic ? 'B' : 'F')}
@@ -93,8 +92,8 @@ export default function SkillTable({ state, select, mark }: SkillTableProps) {
                         </label>
                       </td>
                     </tr>
-                  );
-                })}
+                  )
+                )}
               </Fragment>
             ))}
           </Fragment>

@@ -160,8 +160,6 @@ function updateSkillState(
         ...skillGroup,
         items: skillGroup.items.map((skill: Skill) => {
           if (index === skill.index) {
-            console.log('set', { ...skill, ...object });
-
             return { ...skill, ...object };
           }
 
@@ -181,13 +179,7 @@ function reducer(state: State, action: Action): State {
     case 'mark':
       return updateState(state, action as ExperienceAction, { marked: action.marked });
     case 'selectSkill':
-      console.log(action);
-
-      const newState = updateSkillState(state, action.index, { value: action.value });
-
-      console.log(newState.skills[0].groups[0].items[0].value);
-
-      return newState;
+      return updateSkillState(state, action.index, { value: action.value });
     case 'markSkill':
       return updateSkillState(state, action.index, { marked: action.marked });
     case 'note':

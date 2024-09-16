@@ -32,7 +32,7 @@ export default function SkillMarked({ state, mark }: SkillMarkedProps) {
     .filter((item) => item !== null);
 
   if (items.length === 0) {
-    return <p>Nog geen gemarkeerde ervaringen</p>;
+    return <p>Nog geen gemarkeerde vaardigheden</p>;
   }
 
   return <ul>{items}</ul>;
