@@ -13,6 +13,22 @@ export interface State {
   competences: string[];
   themes: Theme[];
   notes: string;
+  skills: SkillCategory[];
+}
+
+export interface SkillCategory {
+  name: string;
+  groups: SkillGroup[];
+}
+
+export interface SkillGroup {
+  name: string;
+  items: Skill[];
+}
+
+export interface Skill {
+  name: string;
+  basic: boolean;
 }
 
 export interface Theme {

@@ -400,5 +400,153 @@
         }
       ]
     }
+  ],
+  "skills": [
+    {
+      "name": "diagnostiek",
+      "groups": [
+        {
+          "name": "Algemeen",
+          "items": [
+            {
+              "name": "inspectie habitus en sec. geslachtskenmerken",
+              "basic": true
+            },
+            {
+              "name": "onderzoek pasgeborene ",
+              "basic": true
+            },
+            {
+              "name": "dood vaststellen",
+              "basic": true
+            },
+            {
+              "name": "superviseren vaardigheid (co-ass, PA, POH)",
+              "basic": true
+            }
+          ]
+        },
+        {
+            "name": "Ogen",
+            "items": [
+              {
+                "name": "inspectie (conjuntiva, sclerae, cornea, diepte/helderheid VOK, iris, pupil/pupilreacties, oogleden, adnexen, traansysteem)",
+                "basic": true
+              },
+              {
+                "name": "oogstand/volgbewegingen (Corneareflexbeeldjes, afdekproef)",
+                "basic": true
+              },
+              {
+                "name": "onderzoek met loep, strijk/doorvallend licht, anaestheticum, fluoresceïne",
+                "basic": true
+              },
+              {
+                "name": "visusonderzoek kinderen/volwassenen (stenopeïsche opening)",
+                "basic": true
+              },
+              {
+                "name": "gezichtsveldonderzoek (confrontatiemethode, Amslertest)",
+                "basic": true
+              },
+              {
+                "name": "directe fundoscopie (media, papil, retinavaten, gebruik mydriaticum)",
+                "basic": false
+              },
+              {
+                "name": "indirecte fundoscopie",
+                "basic": false
+              },
+              {
+                "name": "diagnostisch refractioneren ±0,5D",
+                "basic": false
+              },
+              {
+                "name": "meting oogboldruk",
+                "basic": false
+              },
+              {
+                "name": "testen stereo en kleurenzien",
+                "basic": false
+              },
+              {
+                "name": "spleetlamponderzoek",
+                "basic": false
+              },
+              {
+                "name": "testen doorgankelijkheid traansysteem",
+                "basic": false
+              }
+            ]
+        }
+      ]
+    },
+    {
+      "name": "Therapie",
+      "groups": [
+        {
+          "name": "Algemeen",
+          "items": [
+            {
+              "name": "injectie sc/iv/im",
+              "basic": true
+            },
+            {
+              "name": "sc medicatie depot preparaat inbrengen",
+              "basic": true
+            },
+            {
+              "name": "BLS (met AED), handelingen bij bewusteloze (Rautek, stabiele zijligging)",
+              "basic": true
+            },
+            {
+              "name": "cardiopulmonale resuscitatie (adv life supp)",
+              "basic": true
+            },
+            {
+              "name": "hyposensibilisatie",
+              "basic": false
+            },
+            {
+              "name": "superviseren vaardigheid ",
+              "basic": true
+            }
+          ]
+        },
+        {
+          "name": "Ogen",
+          "items": [
+            {
+              "name": "EHBO oogletsel (spoelen, medicatie,verband)",
+              "basic": true
+            },
+            {
+              "name": "behandeling hordeolum",
+              "basic": true
+            },
+            {
+              "name": "behandeling blefaritis ",
+              "basic": true
+            },
+            {
+              "name": "verwijdering corpus alienum ",
+              "basic": true
+            },
+            {
+              "name": "verwijderen roestring",
+              "basic": true
+            },
+            {
+              "name": "behandeling chalazion (curettage/injectie)",
+              "basic": false
+            },
+            {
+              "name": "massage/doorspuiten traankanaal",
+              "basic": false
+            }
+          ]
+        }
+      ]
+    }
   ]
 }
