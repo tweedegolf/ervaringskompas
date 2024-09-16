@@ -194,7 +194,7 @@ function reducer(state: State, action: Action): State {
 }
 
 function initialState(): State {
-  const skillMode = window.location.pathname === SKILLS_PATH;
+  const skillMode = window.location.pathname.startsWith(SKILLS_PATH);
 
   const localState =
     (skillMode ? '' : window.location.hash.slice(1)) ||
