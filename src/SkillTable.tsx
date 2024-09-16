@@ -8,7 +8,6 @@ interface SkillTableProps {
 }
 
 export default function SkillTable({ state, select, mark }: SkillTableProps) {
-  let skillIndex = 0;
   return (
     <table className="form skills">
       <thead>
@@ -63,7 +62,7 @@ export default function SkillTable({ state, select, mark }: SkillTableProps) {
                             type="radio"
                             name={`skill-option-${item.index}`}
                             id={`skill-option-${item.index}-0`}
-                            selected={item.value === false}
+                            checked={item.value === false}
                             onChange={() => select(item.index, false)}
                             aria-label={"onvoldoende ervaring"}
                           />
@@ -75,7 +74,7 @@ export default function SkillTable({ state, select, mark }: SkillTableProps) {
                             type="radio"
                             name={`skill-option-${item.index}`}
                             id={`skill-option-${item.index}-1`}
-                            selected={item.value === true}
+                            checked={item.value === true}
                             onChange={() => select(item.index, true)}
                             aria-label={"voldoende ervaring"}
                           />
@@ -88,7 +87,7 @@ export default function SkillTable({ state, select, mark }: SkillTableProps) {
                             id={`check-${item.index}`}
                             name={`check-${item.index}`}
                             onChange={(e) => mark(item.index, (e.target as HTMLInputElement).checked)}
-                            selected={item.marked}
+                            checked={item.marked}
                             aria-label="markeren"
                           />
                         </label>

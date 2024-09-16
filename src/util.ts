@@ -4,8 +4,6 @@ const ENCODE_VERSION = 'e1';
 
 export function encode(state: State, skillMode: boolean): string {
   if (skillMode) {
-    console.log(state.skills);
-
     const data = state.skills.reduce((acc, skillCategory) => {
       const groups = skillCategory.groups.reduce((acc, skillGroup) => {
         const items = skillGroup.items.reduce((acc, item) => {
@@ -33,7 +31,7 @@ export function encode(state: State, skillMode: boolean): string {
 export function decode(data: State, input: string, skillInput: string, skillMode: boolean): State {
   let skillIndex = 0;
 
-  const populated = {
+  const populated: State = {
     ...data,
     skillMode,
     notes: '',
@@ -60,35 +58,59 @@ export function decode(data: State, input: string, skillInput: string, skillMode
     })),
   };
 
-  if (input.slice(0, 2) !== ENCODE_VERSION) {
-    return populated;
-  }
+  if (input.slice(0, 2) === ENCODE_VERSION) {
+    let pos = 2;
 
-  let pos = 2;
-
-  for (const theme of populated.themes) {
-    if (input[pos] !== 's') {
-      break;
-    }
-    pos += 1;
-
-    for (const experience of theme.experiences) {
-      experience.level = parseInt(input[pos], 10);
+    for (const theme of populated.themes) {
+      if (input[pos] !== 's') {
+        break;
+      }
       pos += 1;
-
-      if (input[pos] === 'm') {
-        experience.marked = true;
+  
+      for (const experience of theme.experiences) {
+        experience.level = parseInt(input[pos], 10);
         pos += 1;
+  
+        if (input[pos] === 'm') {
+          experience.marked = true;
+          pos += 1;
+        }
       }
     }
+
+    if (input[pos] === 'n') {
+      pos += 1;
+      populated.notes = base64URLdecode(input.slice(pos));
+    }
   }
 
-  if (input[pos] !== 'n') {
-    return populated;
-  }
-  pos += 1;
+  if (skillInput.slice(0, 2) === ENCODE_VERSION) {
+    let pos = 2;
 
-  populated.notes = base64URLdecode(input.slice(pos));
+    for (const skillCategory of populated.skills) {
+      for (const skillGroup of skillCategory.groups) {
+        for (const item of skillGroup.items) {
+          let value = parseInt(skillInput[pos], 10);
+          if (value === 1) {
+            item.value = false;
+          } else if (value === 2) {
+            item.value = true;
+          }
+          pos += 1;
+    
+          if (skillInput[pos] === 'm') {
+            item.marked = true;
+            pos += 1;
+          }
+        }
+      }
+    }
+
+    if (skillInput[pos] === 'n') {
+      pos += 1;
+      populated.skillNotes = base64URLdecode(skillInput.slice(pos));
+    }
+  }
 
   return populated;
 }

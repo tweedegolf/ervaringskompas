@@ -211,7 +211,7 @@ function initialState(): State {
 
   const skillLocalState =
     (skillMode ? window.location.hash.slice(1) : '') ||
-    window.localStorage.getItem('persistence') ||
+    window.localStorage.getItem('skill-persistence') ||
     '';
 
   return decode(data, localState, skillLocalState, skillMode);
