@@ -17,7 +17,7 @@ export default function Skills({ state, selectSkill, markSkill, navigate, noteSk
     <>
       <header>
         <div>
-          <h1>Vaardighedenkompas</h1>
+          <h1>Vaardighedencheck</h1>
           <p>
             Overzicht vaardigheden per ICPC-categorie
           </p>
@@ -38,10 +38,7 @@ export default function Skills({ state, selectSkill, markSkill, navigate, noteSk
           <code>F</code> = Facultatieve vaardigheid
         </p>
         <p>
-          <code>*</code> = Ten tijde van de inventarisatie om het huidige overzicht in te delen,
-          ontbrak het onderdeel 'palliatieve en terminale zorg' in dit overzicht en is dus
-          niet meegenomen in de indeling. In 2024 vindt een herijking van deze lijst plaats,
-          dan zal het onderdeel 'palliatieve en terminale zorg' meegenomen worden. 
+          <code>*</code> = nog niet landelijke bepaald of deze vaardigheid tot de basis behoort
         </p>
       </div>
 
@@ -99,7 +96,7 @@ export default function Skills({ state, selectSkill, markSkill, navigate, noteSk
             <svg>
               <use xlinkHref="#icon-printer" />
             </svg>
-            Printen
+            Printen of opslaan PDF
           </button>
         </p>
       </div>

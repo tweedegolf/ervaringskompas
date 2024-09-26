@@ -1078,7 +1078,7 @@
           "name": "Ogen",
           "items": [
             {
-              "name": "inspectie (conjuntiva, sclerae, cornea, diepte/helderheid VOK, iris, pupil/pupilreacties, oogleden, adnexen, traansysteem)",
+              "name": "inspectie (conjunctiva, sclerae, cornea, diepte/helderheid VOK, iris, pupil/pupilreacties, oogleden, adnexen, traansysteem)",
               "basic": true
             },
             {
@@ -1147,7 +1147,7 @@
               "basic": true
             },
             {
-              "name": "beoordeling gehoorgang en trommelvlies(otoscopie)",
+              "name": "beoordeling gehoorgang en trommelvlies (otoscopie)",
               "basic": true
             },
             {
@@ -1181,7 +1181,7 @@
           "name": "Mammae",
           "items": [
             {
-              "name": "inspectie. Palpatie (incl. regionale lymfklieren) ",
+              "name": "inspectie, palpatie (incl. regionale lymfklieren) ",
               "basic": true
             }
           ]
@@ -1207,7 +1207,7 @@
           "name": "Bloedsomloop",
           "items": [
             {
-              "name": "hart(palpatie ictus, percussie hartgrenzen, auscultatie harttonen/souffles)",
+              "name": "hart (palpatie ictus, percussie hartgrenzen, auscultatie harttonen/souffles)",
               "basic": true
             },
             {
@@ -1244,7 +1244,7 @@
               "basic": true
             },
             {
-              "name": "meningeale prikkeling, HZ, coördinatie",
+              "name": "meningeale prikkeling, hersenzenuwen, coördinatie",
               "basic": true
             },
             {
@@ -1281,7 +1281,7 @@
           "name": "Abdomen",
           "items": [
             {
-              "name": "inspectie, auscultatie(darmgeruis, souffles), percussie, palpatie (milt, lever, lymfklieren)",
+              "name": "inspectie, auscultatie (darmgeruis, souffles), percussie, palpatie (milt, lever, lymfklieren)",
               "basic": true
             },
             {
@@ -1313,7 +1313,7 @@
               "basic": true
             },
             {
-              "name": "zwangerschap: uitwendig onderzoek. Uterus (fundushoogte, contracties/tonus, cortonen)",
+              "name": "zwangerschap: uitwendig onderzoek uterus (fundushoogte, contracties/tonus, cortonen)",
               "basic": false
             },
             {
@@ -1391,7 +1391,7 @@
               "basic": true
             },
             {
-              "name": "KOH preparaat huid, haren, nagels",
+              "name": "KOH-preparaat huid, haren, nagels",
               "basic": false
             },
             {
@@ -1399,7 +1399,7 @@
               "basic": true
             },
             {
-              "name": "shave biopt",
+              "name": "shavebiopt",
               "basic": true
             },
             {
@@ -1475,7 +1475,7 @@
           "name": "Ogen",
           "items": [
             {
-              "name": "EHBO oogletsel (spoelen, medicatie,verband)",
+              "name": "EHBO oogletsel (spoelen, medicatie, verband)",
               "basic": true
             },
             {
@@ -1542,7 +1542,7 @@
           "name": "Bloedsomloop",
           "items": [
             {
-              "name": "Handelingen bij tachycardie",
+              "name": "handelingen bij tachycardie",
               "basic": true
             }
           ]
@@ -1555,7 +1555,7 @@
               "basic": true
             },
             {
-              "name": "toedienen/instructie medicatie via inhalatie (voorzetkamer.verneveling)",
+              "name": "toedienen/instructie medicatie via inhalatie (voorzetkamer, verneveling)",
               "basic": true
             },
             {
@@ -1580,7 +1580,7 @@
           "name": "Abdomen",
           "items": [
             {
-              "name": "Incisie perianaal abces",
+              "name": "incisie perianaal abces",
               "basic": true
             },
             {
@@ -1645,7 +1645,7 @@
           "name": "Bewegingsapparaat",
           "items": [
             {
-              "name": "aanleggen vingerspalk (bij Malletvinger)",
+              "name": "aanleggen vingerspalk (bij malletvinger)",
               "basic": true
             },
             {
@@ -1665,7 +1665,7 @@
               "basic": true
             },
             {
-              "name": "Injectie schouder (gewricht)",
+              "name": "injectie schouder (gewricht)",
               "basic": true
             },
             {
@@ -1733,7 +1733,7 @@
               "basic": false
             },
             {
-              "name": "Inbrengen/ verwijderen subcut. anticonceptie",
+              "name": "inbrengen/verwijderen subcutane anticonceptie",
               "basic": false
             },
             {

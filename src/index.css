@@ -156,7 +156,7 @@ header h1 {
 .legenda {
   display: inline-block;
   padding: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   border: 1px solid #eaeaea;
   background-color: #fafafa;
   max-width: 40rem;
@@ -297,19 +297,43 @@ table.form tr.selectable:hover {
   background: #fafafa;
 }
 
-table.form.skills .skillCategory {
-  font-size: 2rem;
-  font-weight: bold;
-  padding-left: 0;
+table.form.skills tr.selectable {
+  color: #46506d;
+} 
+
+table.form.skills tr.selectable.basic {
+  color: #0c3197;
+}
+
+table.form.skills .theme {
   border: none;
 }
 
+table.form.skills .theme  h3 {
+  text-shadow: none;
+}
 
 table.form.skills .skillGroup {
-  background: #DAECF3;
-  color: #3eacd6;
+  background: #beedff;
+  color: #2284aa;
   font-weight: bold;
   border: none;
+}
+
+table.form.skills .theme.diagnostiek {
+  background-color: #9ad48c;
+}
+
+table.form.skills .theme.diagnostiek h3 {
+  color: #405a3a;
+}
+
+table.form.skills .theme.therapie {
+  background-color: #f3e074;
+}
+
+table.form.skills .theme.therapie h3 {
+  color: #74682f;
 }
 
 @media screen and (max-width: 768px) {

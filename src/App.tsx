@@ -55,8 +55,9 @@ export default function App() {
       </div>
 
       <p className="actions">
+        Ook je vaardigheden in kaart brengen? Klik: <br />
         <button onClick={() => navigate(true)}>
-          Vaardighedenkompas
+          Vaardighedencheck
         </button>
       </p>
 
@@ -88,7 +89,7 @@ export default function App() {
             <svg>
               <use xlinkHref="#icon-printer" />
             </svg>
-            Printen
+            Printen of opslaan PDF
           </button>
         </p>
       </div>
