@@ -298,11 +298,11 @@ table.form tr.selectable:hover {
 }
 
 table.form.skills tr.selectable {
-  color: #46506d;
+  color: #9095a5;
 } 
 
 table.form.skills tr.selectable.basic {
-  color: #0c3197;
+  color: #000;
 }
 
 table.form.skills .theme {
