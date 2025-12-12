@@ -1069,12 +1069,12 @@
               "basic": true
             },
             {
-              "name": "superviseren vaardigheid (co-ass, PA, POH)",
-              "basic": true
-            },
-            {
               "name": "CRP bepaling",
               "basic": false
+            },
+            {
+              "name": "superviseren vaardigheid (co-ass, PA, POH)",
+              "basic": true
             }
           ]
         },
@@ -1241,7 +1241,7 @@
             },
             {
               "name": "Epley manoeuvre",
-              "basic": false
+              "basic": true
             },
             {
               "name": "Head Impulse Test (HIT)",
@@ -1319,6 +1319,10 @@
             {
               "name": "maken/beoordelen dipslide",
               "basic": true
+            },
+            {
+              "name": "echoscopie (lever, galblaas, nieren, urinewegen)",
+              "basic": false
             },
             {
               "name": "echoscopie ascites",
@@ -1710,16 +1714,8 @@
               "basic": true
             },
             {
-              "name": "wigexcisie",
-              "basic": true
-            },
-            {
               "name": "behandeling paronychia",
               "basic": true
-            },
-            {
-              "name": "behandeling panaritium",
-              "basic": false
             },
             {
               "name": "excisie naevus/benigne huidtumoren (+ PA)",
@@ -1735,7 +1731,7 @@
             },
             {
               "name": "behandeling ulcus cruris (ambulante compressie)",
-              "basic": true
+              "basic": false
             }
           ]
         },
@@ -1748,11 +1744,11 @@
             },
             {
               "name": "inbrengen voedingssonde",
-              "basic": null
+              "basic": false
             },
             {
               "name": "ascitespunctie",
-              "basic": null
+              "basic": false
             },
             {
               "name": "palliatieve sedatie",
@@ -1760,7 +1756,7 @@
             },
             {
               "name": "euthanasie",
-              "basic": null
+              "basic": false
             }
           ]
         }
