@@ -1071,6 +1071,10 @@
             {
               "name": "superviseren vaardigheid (co-ass, PA, POH)",
               "basic": true
+            },
+            {
+              "name": "CRP bepaling",
+              "basic": false
             }
           ]
         },
@@ -1098,31 +1102,7 @@
               "basic": true
             },
             {
-              "name": "directe fundoscopie (media, papil, retinavaten, gebruik mydriaticum)",
-              "basic": false
-            },
-            {
-              "name": "indirecte fundoscopie",
-              "basic": false
-            },
-            {
-              "name": "diagnostisch refractioneren ±0,5D",
-              "basic": false
-            },
-            {
-              "name": "meting oogboldruk",
-              "basic": false
-            },
-            {
-              "name": "testen stereo en kleurenzien",
-              "basic": false
-            },
-            {
               "name": "spleetlamponderzoek",
-              "basic": false
-            },
-            {
-              "name": "testen doorgankelijkheid traansysteem",
               "basic": false
             }
           ]
@@ -1133,10 +1113,6 @@
             {
               "name": "onderzoek mond/keel (bodem, tong, keelholte, speekselklieren inclusief bimanuele palpatie, kaakgewrichten)",
               "basic": true
-            },
-            {
-              "name": "indirecte laryngoscopie",
-              "basic": false
             },
             {
               "name": "onderzoek neus (inspectie, rhinoscopie, palpatie)",
@@ -1199,7 +1175,7 @@
             },
             {
               "name": "spirometrie (kwaliteit, ROER systematiek)",
-              "basic": true
+              "basic": false
             }
           ]
         },
@@ -1216,7 +1192,7 @@
             },
             {
               "name": "ECG (laten) maken en beoordelen",
-              "basic": true
+              "basic": false
             },
             {
               "name": "polskwaliteiten/deficit, capillary refill, bloeddruk, CVD, pulsaties, veneuze circulatie",
@@ -1224,15 +1200,19 @@
             },
             {
               "name": "30-minuten bloeddrukmeting",
-              "basic": true
+              "basic": false
             },
             {
               "name": "24-uurs bloeddrukmeting in eigen beheer",
-              "basic": true
+              "basic": false
             },
             {
               "name": "Doppler onderzoek (bepalen EAI)",
-              "basic": true
+              "basic": false
+            },
+            {
+              "name": "echoscopie aorta abdominalis / 2-punts",
+              "basic": false
             }
           ]
         },
@@ -1310,7 +1290,7 @@
             },
             {
               "name": "onderzoek fluor vaginalis",
-              "basic": true
+              "basic": false
             },
             {
               "name": "zwangerschap: uitwendig onderzoek uterus (fundushoogte, contracties/tonus, cortonen)",
@@ -1341,19 +1321,7 @@
               "basic": true
             },
             {
-              "name": "maken /beoordelen urinesediment",
-              "basic": false
-            },
-            {
-              "name": "spermaonderzoek",
-              "basic": false
-            },
-            {
-              "name": "postcoïtum test",
-              "basic": false
-            },
-            {
-              "name": "echoscopie",
+              "name": "echoscopie ascites",
               "basic": false
             }
           ]
@@ -1404,10 +1372,6 @@
             },
             {
               "name": "teledermatologie",
-              "basic": false
-            },
-            {
-              "name": "huidpriktest",
               "basic": false
             },
             {
@@ -1462,10 +1426,6 @@
               "basic": true
             },
             {
-              "name": "hyposensibilisatie",
-              "basic": false
-            },
-            {
               "name": "superviseren vaardigheid ",
               "basic": true
             }
@@ -1480,7 +1440,7 @@
             },
             {
               "name": "behandeling hordeolum",
-              "basic": true
+              "basic": false
             },
             {
               "name": "behandeling blefaritis ",
@@ -1496,10 +1456,6 @@
             },
             {
               "name": "behandeling chalazion (curettage/injectie)",
-              "basic": false
-            },
-            {
-              "name": "massage/doorspuiten traankanaal",
               "basic": false
             }
           ]
@@ -1561,18 +1517,6 @@
             {
               "name": "toedienen zuurstof",
               "basic": true
-            },
-            {
-              "name": "intuberen",
-              "basic": false
-            },
-            {
-              "name": "tracheotomie",
-              "basic": false
-            },
-            {
-              "name": "naald spanningspneumothorax",
-              "basic": false
             }
           ]
         },
@@ -1580,15 +1524,7 @@
           "name": "Abdomen",
           "items": [
             {
-              "name": "incisie perianaal abces",
-              "basic": true
-            },
-            {
               "name": "incisie getromboseerd hemorroïd",
-              "basic": false
-            },
-            {
-              "name": "ligatuur inwendig hemorroïd (Barron)",
               "basic": false
             },
             {
@@ -1597,7 +1533,7 @@
             },
             {
               "name": "verwisselen katheter (supra pubis)",
-              "basic": true
+              "basic": false
             },
             {
               "name": "verwisselen katheter (urethra ♀ en ♂)",
@@ -1612,7 +1548,7 @@
               "basic": true
             },
             {
-              "name": "inbrengen IUD (Mirena)",
+              "name": "inbrengen IUD (hormoonhoudend)",
               "basic": true
             },
             {
@@ -1629,10 +1565,6 @@
             },
             {
               "name": "verloskundige zorg",
-              "basic": false
-            },
-            {
-              "name": "circumcisie",
               "basic": false
             },
             {
@@ -1658,7 +1590,7 @@
             },
             {
               "name": "aanleggen tape verband (enkel)",
-              "basic": true
+              "basic": false
             },
             {
               "name": "injectie schouder (subacromiaal)",
@@ -1670,23 +1602,23 @@
             },
             {
               "name": "injectie elleboog (epicondyl)",
-              "basic": true
+              "basic": false
             },
             {
               "name": "injectie elleboog (bursa olecrani)",
-              "basic": true
+              "basic": false
             },
             {
               "name": "injectie pols (Quervain)",
-              "basic": true
+              "basic": false
             },
             {
               "name": "injectie pols (CTS)",
-              "basic": true
+              "basic": false
             },
             {
               "name": "injectie hand (triggerfinger)",
-              "basic": true
+              "basic": false
             },
             {
               "name": "injectie heup (bursa trochanterica)",
@@ -1694,7 +1626,7 @@
             },
             {
               "name": "injectie knie (bursa prepatelellaris)",
-              "basic": true
+              "basic": false
             },
             {
               "name": "injectie knie (gewricht)",
@@ -1702,7 +1634,7 @@
             },
             {
               "name": "punctie/injectie ganglion",
-              "basic": true
+              "basic": false
             },
             {
               "name": "repositie luxatie (schouder)",
@@ -1714,19 +1646,7 @@
             },
             {
               "name": "repositie luxatie (vinger/teen)",
-              "basic": true
-            },
-            {
-              "name": "repositie luxatie (patella)",
               "basic": false
-            },
-            {
-              "name": "behandeling fractuur (clavicula)",
-              "basic": false
-            },
-            {
-              "name": "behandeling fractuur (costa)",
-              "basic": true
             },
             {
               "name": "behandeling fractuur (phalangen)",
@@ -1734,10 +1654,6 @@
             },
             {
               "name": "inbrengen/verwijderen subcutane anticonceptie",
-              "basic": false
-            },
-            {
-              "name": "sclerosering varices",
               "basic": false
             }
           ]
@@ -1828,11 +1744,7 @@
           "items": [
             {
               "name": "subctane pijnbestrijding",
-              "basic": null
-            },
-            {
-              "name": "epidurale pijnbestrijding",
-              "basic": null
+              "basic": true
             },
             {
               "name": "inbrengen voedingssonde",
@@ -1844,7 +1756,7 @@
             },
             {
               "name": "palliatieve sedatie",
-              "basic": null
+              "basic": true
             },
             {
               "name": "euthanasie",
